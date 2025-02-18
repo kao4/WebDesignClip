@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: ja
+name: WebDesignClip
+primary: true
+siteGroup: 87a01ad4-7251-4ef2-bd7c-46f111fff5f5 # WebDesignClip
+sortOrder: 1
