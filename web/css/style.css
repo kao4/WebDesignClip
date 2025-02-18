@@ -88,15 +88,24 @@ footer {
   height: 247px;
 }
 .footer__sns-nav {
+  display: flex;
   background: #434343;
-  padding-block: 50px 8px;
+  padding-block: 50px 20px;
   margin-bottom: 15px;
-  a {
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  li {
     width: 35px;
     height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     background: #555;
-    background-position: 13px 10px;
-    opacity: 0.4;
+  }
+  img {
+    border-radius: 50%;
+    object-fit: cover;
   }
 }
