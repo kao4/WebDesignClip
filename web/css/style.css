@@ -146,6 +146,11 @@ header {
     background: #f3f0ea;
     margin-block: 2em;
     gap: 1.2em;
+    transition: filter 0.3s ease, opacity 0.3s ease;
+  }
+  .next-site__item:hover {
+    filter: brightness(1.1);
+    opacity: 0.8;
   }
   .next-site__text {
     display: flex;
