@@ -59,13 +59,20 @@ header {
   width: 100%;
   margin-bottom: 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 350px); /* 固定幅350pxで3カラム */
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 60px;
-  grid-row-gap: 60px;
-  padding: 80px;
+  gap: 60px;
+  margin: 80px auto; /* 中央寄せ */
+  justify-content: center; /* グリッド全体を中央寄せ */
+  @media screen and (min-width: 1600px) {
+    grid-template-columns: repeat(4, 350px); /* 4カラムに変更 */
+  }
+  @media screen and (max-width: 1220px) {
+    grid-template-columns: repeat(2, 350px); /* 2カラムに変更 */
+  }
 }
 .content__wrapper {
+  width: 350px;
   display: block;
   background: #f5f5f5;
   color: #666666;
@@ -87,12 +94,15 @@ header {
 footer {
   height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #434343;
   color: #f3f0ea;
+  letter-spacing: 0.08em;
 }
 .footer__sns-nav {
+  display: flex;
   padding-block: 50px 20px;
   margin-bottom: 15px;
   gap: 15px;
@@ -103,10 +113,21 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    /* background: #555; */
+    background: #555;
   }
   img {
     border-radius: 50%;
     object-fit: cover;
   }
+}
+.footer__site-nav {
+  display: flex;
+  font-size: 12px;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.footer__site-title,
+small {
+  font-size: 10px;
+  margin-bottom: 30px;
 }
