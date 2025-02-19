@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/base.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>WebDesignClip</title>
   </head>
   <body>
@@ -15,7 +15,7 @@
       <h1 class="header__title">WebDesignClip</h1>
     </header>
     <!-- タブボタン -->
-    <nav>
+    <nav class="header__nav">
       <ul class="tabs">
         <li class="tab active" data-tab="section-japan">Japan</li>
         <li class="tab" data-tab="section-world">World</li>
@@ -200,19 +200,32 @@
     <footer>
       <ul class="footer__sns-nav">
         <li><a href="#" class="sns__fb" target="_blank" aria-label="facebook">
-            <img src="images/sns01.svg" alt="" class="sns__fb-logo"></a>
+            <img src="images/sns01.svg" alt="" width="15" height="15" class="sns__fb-logo"></a>
         </li>
         <li><a href="#" class="sns__x" target="_blank" aria-label="x">
-            <img src="images/sns02.svg" alt="" class="sns__fb-logo"></a>
+            <img src="images/sns02.svg" alt="" width="15" height="15" class="sns__fb-logo"></a>
         </li>
         <li><a href="#" class="sns__ht" target="_blank" aria-label="hatena">
-            <img src="images/sns03.webp" alt="" class="sns__fb-logo"></a>
+            <img src="images/sns03.webp" alt="" width="20" height="20" class="sns__fb-logo"></a>
         </li>
         <li><a href="#" class="sns__fd" target="_blank" aria-label="feedly">
-            <img src="images/sns04.svg" alt="" class="sns__fb-logo"></a>
+            <img src="images/sns04.svg" alt="" width="15" height="15" class="sns__fb-logo"></a>
         </li>
       </ul>
+      <nav class="footer__nav">
+        <ul class="footer__site-nav">
+            <li><a href="#" class="about">サイトについて</a></li>
+            <li><a href="#" class="recommend">サイト推薦</a></li>
+            <li><a href="#" class="pp">プライバシーポリシー</a></li>
+            <li><a href="#" class="contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <div class="footer__title">
+        <p class="footer__site-title">Webデザイン制作の参考になる日本のWebデザイン集</p>
+        <small>Copyright © webdesignclip All Rights Reserved.</small>        
+      </div>
     </footer>
+    
     <script>
       // タブ切り替えの処理
       document.querySelectorAll(".tab").forEach((tab) => {

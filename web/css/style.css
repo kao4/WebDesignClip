@@ -85,15 +85,16 @@ header {
 }
 /* footer */
 footer {
-  height: 247px;
-}
-.footer__sns-nav {
+  height: auto;
   display: flex;
-  background: #434343;
-  padding-block: 50px 20px;
-  margin-bottom: 15px;
   justify-content: center;
   align-items: center;
+  background: #434343;
+  color: #f3f0ea;
+}
+.footer__sns-nav {
+  padding-block: 50px 20px;
+  margin-bottom: 15px;
   gap: 15px;
   li {
     width: 35px;
@@ -102,7 +103,7 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background: #555;
+    /* background: #555; */
   }
   img {
     border-radius: 50%;
