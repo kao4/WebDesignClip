@@ -1,4 +1,4 @@
-dateModified: 1740124610
+dateModified: 1740468115
 elementSources:
   craft\elements\Asset:
     -
@@ -58,6 +58,9 @@ elementSources:
     -
       key: 'section:6657f990-f026-44f5-802e-9380ced93edd' # Smartphone
       type: native
+    -
+      heading: nextSiteJapan
+      type: heading
 email:
   fromEmail: kaori@cdgrph.com
   fromName: WebDesignClip
@@ -92,6 +95,7 @@ meta:
     a8933d7d-7e49-4cb9-b272-82dd7b6a49c2: Uploads # Uploads
     a87492ec-70a1-4e6a-bc78-72ceb57353c9: nextSiteTitle # nextSiteTitle
     a7309177-32dc-4706-923e-b46ff0c1da4f: designCategory # designCategory
+    ac8b4c59-b425-40f3-b7ff-8418a5469f40: nextSiteNav # nextSiteNav
     cc42596a-8986-4561-9c52-29a5ee977fb9: LandingPage # LandingPage
     e7ea1271-06e5-4350-aee0-122e94fe2024: fashionCategory # fashionCategory
     ea976903-2cc8-487d-aff1-61f99c873b37: entryDiscription # entryDiscription
