@@ -1,0 +1,50 @@
+defaultPlacement: end
+fieldLayouts:
+  4c26a2b6-95c8-4511-97fb-d46b61736860:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-02-21T01:38:16+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: ce3842a8-29cf-490c-bc15-136e11ddc130
+            userCondition: null
+            warning: null
+            width: 100
+        name: コンテンツ
+        uid: f52c8f19-341c-4e9c-976b-d59a0f2fb068
+        userCondition: null
+handle: officecategory
+name: officeCategory
+siteSettings:
+  0982ccc7-8b77-445e-ac6b-ffbff5fc138b: # WebDesignClip
+    hasUrls: true
+    template: officecategory/_category.twig
+    uriFormat: 'officecategory/{slug}'
+structure:
+  maxLevels: null
+  uid: a18eb1ae-aefd-4306-82e6-309128cfe8ab

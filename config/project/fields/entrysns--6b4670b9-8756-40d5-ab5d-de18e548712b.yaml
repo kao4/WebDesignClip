@@ -1,0 +1,55 @@
+columnSuffix: null
+handle: entrysns
+instructions: null
+name: entrySns
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - facebook
+        -
+          - value
+          - facebook
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - X
+        -
+          - value
+          - x
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - bookMark
+        -
+          - value
+          - bookmark
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - pintarest
+        -
+          - value
+          - pintarest
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\MultiSelect

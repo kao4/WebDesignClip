@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 1c304f36-ab22-4c8e-aa8f-28b24a641f39 # entryContent
+handle: sectionlandingpage
+maxAuthors: 1
+name: LandingPage
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - プライマリのエントリページ
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  0982ccc7-8b77-445e-ac6b-ffbff5fc138b: # WebDesignClip
+    enabledByDefault: true
+    hasUrls: true
+    template: landingpage/_entry.twig
+    uriFormat: 'landingpage/{slug}'
+type: channel

@@ -1,0 +1,168 @@
+fieldLayouts:
+  1d22bd6c-fc22-4570-9d97-a8e5c284f4d9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-21T07:48:45+00:00'
+            elementCondition: null
+            fieldUid: 4763bed9-f39f-4e97-9935-1db870ccf2eb # nextSiteImage
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6b6e627a-42ae-4c69-90f5-79762d8b63f8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-21T07:48:45+00:00'
+            elementCondition: null
+            fieldUid: a87492ec-70a1-4e6a-bc78-72ceb57353c9 # nextSiteTitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8613fd12-9443-4cbe-9de7-8cae62387d91
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-21T07:48:45+00:00'
+            elementCondition: null
+            fieldUid: 2db5f188-54bb-444b-ba3d-4754dbc5bc39 # nextSiteUploadDate
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7443061f-f1a5-415c-8ae1-66736f1c3af8
+            userCondition: null
+            warning: null
+            width: 100
+        name: nextLandingContent01
+        uid: 4a26b45a-c976-4067-98a1-e1120310133c
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-21T07:48:45+00:00'
+            elementCondition: null
+            fieldUid: 4763bed9-f39f-4e97-9935-1db870ccf2eb # nextSiteImage
+            handle: nextsiteimage2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2a9f2ab2-f1d3-44c4-84b4-7a5fb3d3dafb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-21T07:48:45+00:00'
+            elementCondition: null
+            fieldUid: a87492ec-70a1-4e6a-bc78-72ceb57353c9 # nextSiteTitle
+            handle: nextsitetitle2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0e8e5186-c858-4314-a68d-f39e8e1a5779
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-21T07:48:45+00:00'
+            elementCondition: null
+            fieldUid: 2db5f188-54bb-444b-ba3d-4754dbc5bc39 # nextSiteUploadDate
+            handle: nextsiteuploaddate2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3641c5f1-ba2c-4bd2-9e5d-d28670ed76bd
+            userCondition: null
+            warning: null
+            width: 100
+        name: nextLandingContent02
+        uid: 4b69f00f-de45-4452-b840-630b1e6811fd
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-21T07:48:45+00:00'
+            elementCondition: null
+            fieldUid: 4763bed9-f39f-4e97-9935-1db870ccf2eb # nextSiteImage
+            handle: nextsiteimage3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fc7396c4-8104-479e-9816-3e45b81ff743
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-21T07:48:45+00:00'
+            elementCondition: null
+            fieldUid: a87492ec-70a1-4e6a-bc78-72ceb57353c9 # nextSiteTitle
+            handle: nextsitetitle3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a0ffac7d-fcd7-45bd-9b3b-a61e0762c479
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-21T07:48:45+00:00'
+            elementCondition: null
+            fieldUid: 2db5f188-54bb-444b-ba3d-4754dbc5bc39 # nextSiteUploadDate
+            handle: nextsiteuploaddate3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 33ecc562-17df-4f18-8ca1-d00f292f6111
+            userCondition: null
+            warning: null
+            width: 100
+        name: nextLandingContent03
+        uid: e10a6fe9-ada3-4e1f-b033-f2b4c716aca6
+        userCondition: null
+handle: nextsitenavlandingpage
+name: nextSiteNavLandingPage
+sortOrder: 5

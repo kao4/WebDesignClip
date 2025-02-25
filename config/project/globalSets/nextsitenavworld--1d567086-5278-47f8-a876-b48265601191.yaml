@@ -1,0 +1,168 @@
+fieldLayouts:
+  3b52331f-0679-4aed-8f95-579d645c7d4d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-21T07:47:20+00:00'
+            elementCondition: null
+            fieldUid: 4763bed9-f39f-4e97-9935-1db870ccf2eb # nextSiteImage
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 87f92ac0-b614-462d-a136-af3652327094
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-21T07:47:20+00:00'
+            elementCondition: null
+            fieldUid: a87492ec-70a1-4e6a-bc78-72ceb57353c9 # nextSiteTitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e5bb9fa9-256c-4319-af8e-0b430362ed75
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-21T07:47:20+00:00'
+            elementCondition: null
+            fieldUid: 2db5f188-54bb-444b-ba3d-4754dbc5bc39 # nextSiteUploadDate
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a3b9e322-5277-43ea-aa48-6b5c70434a4e
+            userCondition: null
+            warning: null
+            width: 100
+        name: nextWorldContent01
+        uid: 89311a75-bd4a-4d3e-9d84-db64967e8c1f
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-21T07:47:20+00:00'
+            elementCondition: null
+            fieldUid: 4763bed9-f39f-4e97-9935-1db870ccf2eb # nextSiteImage
+            handle: nextsiteimage2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 20b23003-3691-4bde-9129-04c5e18afd3c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-21T07:47:20+00:00'
+            elementCondition: null
+            fieldUid: a87492ec-70a1-4e6a-bc78-72ceb57353c9 # nextSiteTitle
+            handle: nextsitetitle2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e32acde9-5d75-486a-a7c2-00c9ed7439b8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-21T07:47:20+00:00'
+            elementCondition: null
+            fieldUid: 2db5f188-54bb-444b-ba3d-4754dbc5bc39 # nextSiteUploadDate
+            handle: nextsiteuploaddate2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 824cb2f6-34bc-4bd9-b084-14389152c2b8
+            userCondition: null
+            warning: null
+            width: 100
+        name: nextWorldContent02
+        uid: 74184131-91c2-4a0e-937b-24088be3a196
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-21T07:47:20+00:00'
+            elementCondition: null
+            fieldUid: 4763bed9-f39f-4e97-9935-1db870ccf2eb # nextSiteImage
+            handle: nextsiteimage3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3fd4793b-66c4-4f2d-823e-0d35ff08ee4a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-21T07:47:20+00:00'
+            elementCondition: null
+            fieldUid: a87492ec-70a1-4e6a-bc78-72ceb57353c9 # nextSiteTitle
+            handle: nextsitetitle3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b82476b3-3f8f-4014-857a-252be890558e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-21T07:47:20+00:00'
+            elementCondition: null
+            fieldUid: 2db5f188-54bb-444b-ba3d-4754dbc5bc39 # nextSiteUploadDate
+            handle: nextsiteuploaddate3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a90c228f-72f3-438c-a9c6-8ee4d3483c86
+            userCondition: null
+            warning: null
+            width: 100
+        name: nextWorldContent03
+        uid: 542f34c4-2689-4f3d-91fb-d1d03ebf8fdf
+        userCondition: null
+handle: nextsitenavworld
+name: nextSiteNavWorld
+sortOrder: 4

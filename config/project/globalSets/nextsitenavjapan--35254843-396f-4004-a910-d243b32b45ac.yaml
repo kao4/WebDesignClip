@@ -1,0 +1,168 @@
+fieldLayouts:
+  2856dd09-d541-4e36-8af3-0b9d36697864:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-21T07:45:40+00:00'
+            elementCondition: null
+            fieldUid: 4763bed9-f39f-4e97-9935-1db870ccf2eb # nextSiteImage
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 17c300c7-dc9c-4c7b-8913-e4ec7d536740
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-21T07:45:40+00:00'
+            elementCondition: null
+            fieldUid: a87492ec-70a1-4e6a-bc78-72ceb57353c9 # nextSiteTitle
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4385b18a-a2a3-42c2-8a35-c82fa45e2e5d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-21T07:45:40+00:00'
+            elementCondition: null
+            fieldUid: 2db5f188-54bb-444b-ba3d-4754dbc5bc39 # nextSiteUploadDate
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f4fdb496-721a-47d0-9b00-4a7936cbb573
+            userCondition: null
+            warning: null
+            width: 100
+        name: nextJapanContent01
+        uid: 05c3ba92-2bc8-42c1-b9f6-193288fcde68
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-21T07:45:40+00:00'
+            elementCondition: null
+            fieldUid: 4763bed9-f39f-4e97-9935-1db870ccf2eb # nextSiteImage
+            handle: nextsiteimage2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1b428fa5-4a60-49dc-a07d-982f7d7003d2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-21T07:45:40+00:00'
+            elementCondition: null
+            fieldUid: a87492ec-70a1-4e6a-bc78-72ceb57353c9 # nextSiteTitle
+            handle: nextsitetitle2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 74f664ca-0f9d-41aa-b984-fe5e224a2247
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-21T07:45:40+00:00'
+            elementCondition: null
+            fieldUid: 2db5f188-54bb-444b-ba3d-4754dbc5bc39 # nextSiteUploadDate
+            handle: nextsiteuploaddate2
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 95268584-f026-4670-be61-f415aec33eef
+            userCondition: null
+            warning: null
+            width: 100
+        name: nextJapanContent02
+        uid: 6ae8f800-3feb-4f53-8593-e38fd49fc258
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-21T07:45:40+00:00'
+            elementCondition: null
+            fieldUid: 4763bed9-f39f-4e97-9935-1db870ccf2eb # nextSiteImage
+            handle: nextsiteimage3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3363fe0e-1858-4942-9f7d-b36383e3dd26
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-21T07:45:40+00:00'
+            elementCondition: null
+            fieldUid: a87492ec-70a1-4e6a-bc78-72ceb57353c9 # nextSiteTitle
+            handle: nextsitetitle3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b236a2fc-6edc-49ae-8658-26a391dfb380
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-21T07:45:40+00:00'
+            elementCondition: null
+            fieldUid: 2db5f188-54bb-444b-ba3d-4754dbc5bc39 # nextSiteUploadDate
+            handle: nextsiteuploaddate3
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e8871560-95a9-4370-be0a-cde5a820addb
+            userCondition: null
+            warning: null
+            width: 100
+        name: nextJapanContent03
+        uid: a7991284-7e63-48c4-bf06-0acbf7cab60f
+        userCondition: null
+handle: nextsitenavjapan
+name: nextSiteNavJapan
+sortOrder: 3

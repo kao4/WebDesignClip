@@ -1,22 +1,104 @@
-dateModified: 1739843607
+dateModified: 1740124610
+elementSources:
+  craft\elements\Asset:
+    -
+      defaultSort:
+        - dateCreated
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'volume:a8933d7d-7e49-4cb9-b272-82dd7b6a49c2' # Uploads
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - link
+      type: native
+    -
+      defaultSort:
+        - dateCreated
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: temp
+      tableAttributes:
+        - filename
+        - size
+        - dateModified
+        - link
+      type: native
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      heading: チャネル
+      type: heading
+    -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:05a7c8c9-9d3a-4fb4-8e24-c290ccc4b244' # Japan
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+        - id
+        - section
+      type: native
+    -
+      key: 'section:956f99d8-d09d-4b67-82d6-a772345d1631' # World
+      type: native
+    -
+      key: 'section:cc42596a-8986-4561-9c52-29a5ee977fb9' # LandingPage
+      type: native
+    -
+      key: 'section:6657f990-f026-44f5-802e-9380ced93edd' # Smartphone
+      type: native
 email:
   fromEmail: kaori@cdgrph.com
   fromName: WebDesignClip
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  uploads:
+    hasUrls: true
+    name: Uploads
+    settings:
+      path: '@webroot/uploads/{slug}'
+    type: craft\fs\Local
+    url: /uploads
 meta:
   __names__:
+    1c304f36-ab22-4c8e-aa8f-28b24a641f39: entryContent # entryContent
+    1d567086-5278-47f8-a876-b48265601191: nextSiteNavWorld # nextSiteNavWorld
+    2db5f188-54bb-444b-ba3d-4754dbc5bc39: nextSiteUploadDate # nextSiteUploadDate
+    4a32fc6d-95d3-4754-a5ba-6949b01d01c7: entryUrl # entryUrl
+    05a7c8c9-9d3a-4fb4-8e24-c290ccc4b244: Japan # Japan
+    6b4670b9-8756-40d5-ab5d-de18e548712b: entrySns # entrySns
+    77cd571c-7172-4103-8371-2e5573083b06: officeCategory # officeCategory
     87a01ad4-7251-4ef2-bd7c-46f111fff5f5: WebDesignClip # WebDesignClip
+    257aa078-3424-4e7a-a784-d35c2ee5d07e: entryTag # entryTag
+    956f99d8-d09d-4b67-82d6-a772345d1631: World # World
     0982ccc7-8b77-445e-ac6b-ffbff5fc138b: WebDesignClip # WebDesignClip
+    4763bed9-f39f-4e97-9935-1db870ccf2eb: nextSiteImage # nextSiteImage
+    6657f990-f026-44f5-802e-9380ced93edd: Smartphone # Smartphone
+    85302b02-7607-4111-9e0c-9e51b19456fa: nextSiteNavLandingPage # nextSiteNavLandingPage
+    175499ad-6da1-485d-8cfb-e65391305eaa: otherCategory # otherCategory
+    35254843-396f-4004-a910-d243b32b45ac: nextSiteNavJapan # nextSiteNavJapan
+    a3afbe90-6f07-4821-985b-e6891d041f96: entryImage # entryImage
+    a8933d7d-7e49-4cb9-b272-82dd7b6a49c2: Uploads # Uploads
+    a87492ec-70a1-4e6a-bc78-72ceb57353c9: nextSiteTitle # nextSiteTitle
+    a7309177-32dc-4706-923e-b46ff0c1da4f: designCategory # designCategory
+    cc42596a-8986-4561-9c52-29a5ee977fb9: LandingPage # LandingPage
+    e7ea1271-06e5-4350-aee0-122e94fe2024: fashionCategory # fashionCategory
+    ea976903-2cc8-487d-aff1-61f99c873b37: entryDiscription # entryDiscription
+    ebe3c285-a23d-47f3-bcc0-de050c385a55: nextSiteNavSmartphone # nextSiteNavSmartphone
 system:
   edition: solo
   live: true
   name: WebDesignClip
   schemaVersion: 5.6.0.2
   timeZone: America/Los_Angeles
-users:
-  allowPublicRegistration: false
-  defaultGroup: null
-  photoSubpath: null
-  photoVolumeUid: null
-  require2fa: false
-  requireEmailVerification: true
