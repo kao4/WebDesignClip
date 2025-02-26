@@ -1,25 +1,39 @@
 <section id="section-japan" class="tab-content active section-content">
     {% set japanEntries = craft.entries()
         .section('sectionJapan')
-        .type('entryContent')
+        .type('entrycontent')
         .limit(12)
         .all() %}
 
-    {# 1ページ目 #}
-    <div class="section-content__grid">
-        {% for entry in japanEntries %}
-            {% if loop.index0 < 6 %}
-                {% include "_components/_entry-card.twig" with { entry: entry } %}
-            {% endif %}
-        {% endfor %}
-    </div>
+    {# Splideスライダーの実装 #}
+    <div class="splide" id="section-splide">
+        <div class="splide__track">
+            <div class="splide__list">
+                {# 1ページ目 #}
+                <div class="splide__slide">
+                    <div class="section-content__grid">
+                        {% for entry in japanEntries %}
+                            {% if loop.index0 < 6 %}
+                                {% include "_components/_entry-card.twig" with { entry: entry } %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
 
-    {# 2ページ目 #}
-    <div class="section-content__grid">
-        {% for entry in japanEntries %}
-            {% if loop.index0 >= 6 and loop.index0 < 12 %}
-                {% include "_components/_entry-card.twig" with { entry: entry } %}
-            {% endif %}
-        {% endfor %}
+                {# 2ページ目 #}
+                <div class="splide__slide">
+                    <div class="section-content__grid">
+                        {% for entry in japanEntries %}
+                            {% if loop.index0 >= 6 and loop.index0 < 12 %}
+                                {% include "_components/_entry-card.twig" with { entry: entry } %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {# Splideのページネーション #}
+        <div class="splide__pagination"></div>
     </div>
 </section>

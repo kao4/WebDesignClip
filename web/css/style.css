@@ -137,6 +137,69 @@ header {
   }
 }
 
+/* Splideのカスタマイズ */
+.splide {
+  margin: 2rem 0;
+}
+
+.splide__pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+  gap: 1em; /* ページ番号間の間隔 */
+  position: relative;
+  .splide__pagination--ltr {
+    display: none;
+  }
+}
+
+.splide__pagination__page {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #f0f0f0;
+  color: #666;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* アクティブなページ番号のスタイル */
+.splide__pagination__page.is-active {
+  background-color: #666;
+  color: white;
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* 次へボタンのスタイル */
+/* .splide__arrow--next {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #f0f0f0;
+  color: #666;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+} */
+
+/* ホバー効果 */
+.splide__pagination__page:hover:not(.is-active) {
+  background-color: #e0e0e0;
+}
+
 /* next-site-nav */
 #next-site-nav {
   width: 100%;
