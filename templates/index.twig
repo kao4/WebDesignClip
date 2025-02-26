@@ -5,20 +5,22 @@
 
 {% block content %}
     {# ヘッダー #}
-    {% include "components/header.twig" %}
+    {% include "_components/_header.twig" %}
 
     {# タブナビゲーション #} 
-    {% include "components/tab.twig" %} 
+    {% include "_components/_tab.twig" %} 
 
     {# 各セクション #}
-    {% include "sections/japan.twig" %} 
-    {% include "sections/world.twig" %} 
-    {% include "sections/landingPage.twig" %} 
-    {% include "sections/smartphone.twig" %}
+    <div class="tab-contents">
+        {% include "_sections/_japan.twig" %} 
+        {% include "_sections/_world.twig" %} 
+        {% include "_sections/_landingPage.twig" %} 
+        {% include "_sections/_smartphone.twig" %}
+    </div>
 
     {# 次のサイトへのナビゲーション #}
-    {% include "components/next-site-nav.twig" %}
+    {% include "_components/_next-site-nav.twig" %}
 
     {# フッター #}
-    {% include "components/footer.twig" %}
+    {% include "_components/_footer.twig" %}
 {% endblock %}

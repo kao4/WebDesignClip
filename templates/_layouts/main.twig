@@ -17,7 +17,7 @@
   <body class="{{ bodyClass is defined ? bodyClass : '' }}">
     {# ヘッダー #} 
     {% block header %} 
-    {% include "components/header.twig" %}
+    {% include "_components/_header.twig" %}
     {% endblock %} 
     
     {# メインコンテンツ #}
@@ -28,7 +28,7 @@
 
     {# フッター #} 
     {% block footer %} 
-    {% include "components/footer.twig" %}
+    {% include "_components/_footer.twig" %}
     {%endblock %} 
     
     {# JavaScript #}
