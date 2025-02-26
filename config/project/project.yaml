@@ -1,4 +1,4 @@
-dateModified: 1740468115
+dateModified: 1740540326
 elementSources:
   craft\elements\Asset:
     -
@@ -13,6 +13,8 @@ elementSources:
         - size
         - dateModified
         - link
+        - alt
+        - location
       type: native
     -
       defaultSort:

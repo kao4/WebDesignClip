@@ -1,4 +1,4 @@
-{% extends "layouts/main.twig" %} 
+{% extends "_layouts/main.twig" %} 
 
 {% set bodyClass = 'webdesign-clip' %} 
 {% set pageTitle = 'WebDesignClip' %} 
@@ -12,10 +12,10 @@
 
     {# 各セクション #}
     <div class="tab-contents">
-        {% include "_sections/_japan.twig" %} 
-        {% include "_sections/_world.twig" %} 
-        {% include "_sections/_landingPage.twig" %} 
-        {% include "_sections/_smartphone.twig" %}
+        {% include "_section/_japan.twig" %} 
+        {% include "_section/_world.twig" %} 
+        {% include "_section/_landingPage.twig" %} 
+        {% include "_section/_smartphone.twig" %}
     </div>
 
     {# 次のサイトへのナビゲーション #}

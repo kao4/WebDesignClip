@@ -1,5 +1,5 @@
 columnSuffix: null
-handle: entryimage
+handle: entryImage
 instructions: null
 name: entryImage
 searchable: true
@@ -7,7 +7,8 @@ settings:
   allowSelfRelations: false
   allowSubfolders: false
   allowUploads: true
-  allowedKinds: null
+  allowedKinds:
+    - image
   branchLimit: null
   defaultUploadLocationSource: 'volume:a8933d7d-7e49-4cb9-b272-82dd7b6a49c2' # Uploads
   defaultUploadLocationSubpath: '@webroot/uploads/{slug}'
@@ -15,17 +16,18 @@ settings:
   maxRelations: null
   minRelations: null
   previewMode: full
-  restrictFiles: false
+  restrictFiles: true
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:a8933d7d-7e49-4cb9-b272-82dd7b6a49c2' # Uploads
   restrictedLocationSubpath: null
   selectionLabel: null
   showCardsInGrid: false
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  sources: '*'
+  sources:
+    - 'volume:a8933d7d-7e49-4cb9-b272-82dd7b6a49c2' # Uploads
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list

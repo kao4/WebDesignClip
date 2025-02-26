@@ -3,7 +3,7 @@ enableVersioning: true
 entryTypes:
   -
     uid: 1c304f36-ab22-4c8e-aa8f-28b24a641f39 # entryContent
-handle: sectionworld
+handle: sectionWorld
 maxAuthors: 1
 name: World
 previewTargets:

@@ -10,28 +10,18 @@
     </title>
 
     {# CSS #}
-    <link rel="stylesheet" href="/src/css/reset.css" />
-    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
 
   <body class="{{ bodyClass is defined ? bodyClass : '' }}">
-    {# ヘッダー #} 
-    {% block header %} 
-    {% include "_components/_header.twig" %}
-    {% endblock %} 
-    
     {# メインコンテンツ #}
     <main>
       {% block content %} 
       {% endblock %}
     </main>
 
-    {# フッター #} 
-    {% block footer %} 
-    {% include "_components/_footer.twig" %}
-    {%endblock %} 
-    
     {# JavaScript #}
-    <script src="/src/js/tab.js"></script>
+    <script src="/js/tab.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 <section id="section-landingPage" class="tab-content active section-content">
     {% set landingPageEntries = craft.entries()
-        .section('landingPage')
+        .section('sectionLandingPage')
         .type('entryContent')
         .limit(12)
         .all() %}
@@ -9,7 +9,7 @@
     <div class="section-content__grid">
         {% for entry in landingPageEntries %}
             {% if loop.index0 < 6 %}
-                {% include "components/entry-card.twig" with { entry: entry } %}
+                {% include "_components/_entry-card.twig" with { entry: entry } %}
             {% endif %}
         {% endfor %}
     </div>
@@ -18,7 +18,7 @@
     <div class="section-content__grid">
         {% for entry in landingPageEntries %}
             {% if loop.index0 >= 6 and loop.index0 < 12 %}
-                {% include "components/entry-card.twig" with { entry: entry } %}
+                {% include "_components/_entry-card.twig" with { entry: entry } %}
             {% endif %}
         {% endfor %}
     </div>

@@ -1,12 +1,12 @@
 <div class="content__wrapper">
     <a href="{{ entry.url }}" class="content__link">
-        {% if entry.entryimage|length %}
-            <img src="{{ entry.entryimage.one().url }}"
+        {% if entry.entryImage %}
+            <img src="{{ siteUrl }}Uploads/sectionImage{{ entry.entryImage }}"
                 alt="{{ entry.title }}" 
                 class="content__img" 
                 width="350" 
                 height="229">
-        {% endif %}         
+        {% endif %}        
         <div class="hover-text">
             <time datetime="{{ entry.postDate|date('Y-m-d') }}">
                 {{ entry.postDate|date('M d,Y') }}
@@ -14,8 +14,8 @@
             <div class="content__category">
                 <span>CATEGORY</span>
                 <p>
-                    {% if entry.entrytag|length %}
-                        {{ entry.entrytag.one().title ?? '企業サイト・事務所・ビジネス' }}
+                    {% if entry.entryTag|length %}
+                        {{ entry.entryTag.one().title ?? '企業サイト・事務所・ビジネス' }}
                     {% endif %}
                 </p>
             </div>                      
@@ -24,5 +24,5 @@
     <h3 class="content__title">
         <a href="{{ entry.url }}">{{ entry.title }}</a>
     </h3>
-    <p class="content__url">{{ entry.entryurl }}</p>
+    <p class="content__url">{{ entry.entryUrl }}</p>
 </div>

@@ -1,5 +1,5 @@
 columnSuffix: null
-handle: entryurl
+handle: entryUrl
 instructions: null
 name: entryUrl
 searchable: false
@@ -9,6 +9,13 @@ settings:
   showLabelField: false
   typeSettings:
     __assoc__:
+      -
+        - entry
+        -
+          __assoc__:
+            -
+              - sources
+              - '*'
       -
         - url
         -
