@@ -7,20 +7,22 @@ window.initSlider = function () {
       const splide = new Splide("#section-splide", {
         type: "slide",
         perPage: 1,
-        arrows: true,
+        arrows: false,
         pagination: true,
         speed: 600,
         easing: "ease",
         gap: "1rem",
         padding: { left: 0, right: 0 },
+        classes: {
+          // ページネーションのクラスを追加
+          pagination: "splide__pagination",
+          page: "splide__pagination__page",
+        },
       });
 
       // スライダーが準備完了したときに実行される処理
       splide.on("mounted", function () {
-        // ページネーションのボタンをすべて取得
         const bullets = document.querySelectorAll(".splide__pagination__page");
-
-        // 各ボタンに番号を追加
         bullets.forEach(function (bullet, index) {
           bullet.textContent = index + 1;
         });

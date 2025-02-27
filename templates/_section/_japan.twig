@@ -12,10 +12,8 @@
                 {# 1ページ目 #}
                 <div class="splide__slide">
                     <div class="section-content__grid">
-                        {% for entry in japanEntries %}
-                            {% if loop.index0 < 6 %}
-                                {% include "_components/_entry-card.twig" with { entry: entry } %}
-                            {% endif %}
+                        {% for entry in japanEntries|slice(0, 6) %}
+                            {% include "_components/_entry-card.twig" with { entry: entry } %}
                         {% endfor %}
                     </div>
                 </div>
@@ -23,10 +21,8 @@
                 {# 2ページ目 #}
                 <div class="splide__slide">
                     <div class="section-content__grid">
-                        {% for entry in japanEntries %}
-                            {% if loop.index0 >= 6 and loop.index0 < 12 %}
-                                {% include "_components/_entry-card.twig" with { entry: entry } %}
-                            {% endif %}
+                        {% for entry in japanEntries|slice(6, 6) %}
+                            {% include "_components/_entry-card.twig" with { entry: entry } %}
                         {% endfor %}
                     </div>
                 </div>

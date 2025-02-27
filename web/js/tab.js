@@ -3,58 +3,59 @@ document.addEventListener("DOMContentLoaded", function () {
   function initTabs() {
     const tabs = document.querySelectorAll(".tab");
 
+    // デバッグ用
+    console.log("Found tabs:", tabs.length);
+
     tabs.forEach((tab) => {
       tab.addEventListener("click", (event) => {
         // イベントの伝播を停止
         event.preventDefault();
         event.stopPropagation();
 
-        // デバッグ情報
-        console.log("Tab clicked");
-        console.log("Clicked tab:", tab.dataset.tab);
+        // クリックされたタブのdata-tab属性を取得
+        const targetId = tab.getAttribute("data-tab");
+        console.log("Clicked tab for:", targetId);
 
-        // 1. 現在のアクティブ要素を確認
-        console.log(
-          "Current active tab:",
-          document.querySelector(".tab.active")
-        );
-        console.log(
-          "Current active content:",
-          document.querySelector(".tab-content.active")
-        );
+        // すべてのタブとコンテンツからactiveクラスを削除
+        document.querySelectorAll(".tab").forEach((t) => {
+          t.classList.remove("active");
+        });
+        document.querySelectorAll(".tab-content").forEach((content) => {
+          content.classList.remove("active");
+          content.style.display = "none"; // 明示的に非表示に
+        });
 
-        // 2. アクティブクラスを削除
-        document
-          .querySelectorAll(".tab.active, .tab-content.active")
-          .forEach((el) => {
-            console.log("Removing active from:", el);
-            el.classList.remove("active");
-          });
-
-        // 3. 新しいタブをアクティブに
+        // クリックされたタブとそのコンテンツをアクティブに
         tab.classList.add("active");
+        const targetContent = document.getElementById(targetId);
+        if (targetContent) {
+          targetContent.classList.add("active");
+          targetContent.style.display = "block"; // 明示的に表示
 
-        // 4. 対応するコンテンツを表示
-        const content = document.getElementById(tab.dataset.tab);
-        if (content) {
-          content.classList.add("active");
-          console.log("Activated content:", content);
-
-          // 5. スライダーの再初期化（もし存在する場合）
-          if (
-            typeof Splide !== "undefined" &&
-            content.querySelector(".splide")
-          ) {
-            console.log("Reinitializing slider in tab:", tab.dataset.tab);
-            window.initSlider && window.initSlider();
+          // Splideスライダーの再初期化（必要な場合）
+          if (typeof Splide !== "undefined") {
+            const slider = targetContent.querySelector(".splide");
+            if (slider) {
+              console.log("Reinitializing slider in:", targetId);
+              window.initSlider && window.initSlider();
+            }
           }
-        } else {
-          console.error("Content not found:", tab.dataset.tab);
         }
       });
     });
   }
 
-  // タブの初期化を実行
+  // 初期表示の設定
+  function initializeDisplay() {
+    // 最初のタブ以外を非表示に
+    document
+      .querySelectorAll(".tab-content:not(.active)")
+      .forEach((content) => {
+        content.style.display = "none";
+      });
+  }
+
+  // 初期化を実行
   initTabs();
+  initializeDisplay();
 });
