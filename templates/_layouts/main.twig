@@ -1,36 +1,22 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    {% block head %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Webデザイン制作の参考になる海外のWebデザインギャラリー・クリップ集">
-
-    <title>
-      {% if pageTitle is defined %}{{ pageTitle }} - {% endif %}WebDesignClip
-    </title>
-
-    {# CSS #}
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
-    {# Splideのスタイル #}
-    <link rel="stylesheet" href="/css/splide.min.css">
-  </head>
-
-  <body class="{{ bodyClass is defined ? bodyClass : '' }}">
-    {# メインコンテンツ #}
-    <main>
-      {% block content %} 
-      {% endblock %}
-    </main>
-
-    {# JavaScript #}
+        <title>{% block title %}Web Design Clip{% endblock %}</title>
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+        <link rel="stylesheet" href="/css/style.css">
+    {% endblock %}
+</head>
+<body>
+    {% block content %}{% endblock %}
     
-    {# Splideのスクリプト #}
+    {% block scripts %}
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    
-    {# tabのスクリプト #}
     <script src="/js/tab.js"></script>
-
     <script src="/js/slider.js"></script>
+    {% endblock %}
   </body>
 </html>

@@ -2,7 +2,7 @@
     {% set japanEntries = craft.entries()
         .section('sectionJapan')
         .type('entrycontent')
-        .limit(12)
+
         .all() %}
 
     {# Splideスライダーの実装 #}
@@ -12,7 +12,7 @@
                 {# 1ページ目 #}
                 <div class="splide__slide">
                     <div class="section-content__grid">
-                        {% for entry in japanEntries|slice(0, 6) %}
+                        {% for entry in japanEntries|slice(0, 12) %}
                             {% include "_components/_entry-card.twig" with { entry: entry } %}
                         {% endfor %}
                     </div>
@@ -21,11 +21,12 @@
                 {# 2ページ目 #}
                 <div class="splide__slide">
                     <div class="section-content__grid">
-                        {% for entry in japanEntries|slice(6, 6) %}
+                        {% for entry in japanEntries|slice(12, 12) %}
                             {% include "_components/_entry-card.twig" with { entry: entry } %}
                         {% endfor %}
                     </div>
                 </div>
+
             </div>
         </div>
 

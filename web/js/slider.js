@@ -7,7 +7,7 @@ window.initSlider = function () {
       const splide = new Splide("#section-splide", {
         type: "slide",
         perPage: 1,
-        arrows: false,
+        arrows: true,
         pagination: true,
         speed: 600,
         easing: "ease",
