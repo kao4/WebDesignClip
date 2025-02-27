@@ -13,7 +13,7 @@
                 <div class="splide__slide">
                     <div class="section-content__grid">
                         {% for entry in japanEntries|slice(0, 12) %}
-                            {% include "_components/_entry-card.twig" with { entry: entry } %}
+                            {% include "_entry/_index.twig" with { entry: entry } %}
                         {% endfor %}
                     </div>
                 </div>
@@ -22,7 +22,7 @@
                 <div class="splide__slide">
                     <div class="section-content__grid">
                         {% for entry in japanEntries|slice(12, 12) %}
-                            {% include "_components/_entry-card.twig" with { entry: entry } %}
+                            {% include "_entry/_index.twig" with { entry: entry } %}
                         {% endfor %}
                     </div>
                 </div>

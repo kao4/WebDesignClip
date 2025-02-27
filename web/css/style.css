@@ -183,8 +183,7 @@ header {
 }
 
 /* アクティブなページ番号のスタイル */
-.splide__pagination__page.is-active,
-.splide__arrow.is-active {
+.splide__pagination__page.is-active {
   background-color: #666;
   color: white;
   transform: scale(1);
@@ -193,7 +192,7 @@ header {
 
 /* ホバー効果 */
 .splide__pagination__page:hover:not(.is-active),
-.splide__arrow:hover:not(.is-active) {
+.splide__arrow:hover {
   background-color: #e0e0e0;
 }
 
