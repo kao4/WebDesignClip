@@ -1,12 +1,15 @@
 <div class="content__wrapper">
     <a href="{{ entry.url }}" class="content__link">
-        {% if entry.entryImage %}
-            <img src="{{ entry.entryImage.one().url }}"
-                alt="{{ entry.title }}" 
-                class="content__img" 
-                width="350" 
-                height="229">
-        {% endif %} 
+        {% if entry.entryImage|length %}
+            {% set image = entry.entryImage.one() %}
+            {% if image %}
+                <img src="{{ image.getUrl() }}"
+                    alt="{{ entry.title }}"
+                    class="content__img"
+                    width="350"
+                    height="229">
+            {% endif %}
+        {% endif %}
         <div class="hover-text">
             <time datetime="{{ entry.postDate|date('Y-m-d') }}">
                 {{ entry.postDate|date('M d,Y') }}

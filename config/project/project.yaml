@@ -1,4 +1,4 @@
-dateModified: 1740639697
+dateModified: 1740710358
 elementSources:
   craft\elements\Asset:
     -
@@ -29,9 +29,45 @@ elementSources:
         - dateModified
         - link
       type: native
+  craft\elements\Category:
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'group:c0710377-8f30-4717-8590-25e28ee26101'
+      tableAttributes:
+        - status
+        - link
+      type: native
+    -
+      condition:
+        class: craft\elements\conditions\categories\CategoryCondition
+        elementType: craft\elements\Category
+        fieldContext: global
+      defaultSort:
+        - id
+        - asc
+      defaultViewMode: ''
+      key: 'custom:7d40da77-9f96-45b7-89c2-8e8535a472df'
+      label: Japan
+      tableAttributes: '-'
+      type: custom
   craft\elements\Entry:
     -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
       key: '*'
+      tableAttributes:
+        - status
+        - section
+        - postDate
+        - expiryDate
+        - link
       type: native
     -
       heading: チャネル
@@ -58,11 +94,18 @@ elementSources:
       key: 'section:cc42596a-8986-4561-9c52-29a5ee977fb9' # LandingPage
       type: native
     -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
       key: 'section:6657f990-f026-44f5-802e-9380ced93edd' # Smartphone
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
       type: native
-    -
-      heading: nextSiteJapan
-      type: heading
 email:
   fromEmail: kaori@cdgrph.com
   fromName: WebDesignClip

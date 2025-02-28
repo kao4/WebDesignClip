@@ -56,7 +56,7 @@ fieldLayouts:
         name: nextSiteNavContent
         uid: 0820bd2e-8689-47cb-98cc-e16747ba599e
         userCondition: null
-handle: nextsitenav
+handle: nextSiteNav
 hasTitleField: false
 icon: null
 name: nextSiteNav

@@ -16,7 +16,7 @@ settings:
   maxRelations: null
   minRelations: null
   previewMode: full
-  restrictFiles: true
+  restrictFiles: false
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
   restrictedLocationSource: 'volume:a8933d7d-7e49-4cb9-b272-82dd7b6a49c2' # Uploads

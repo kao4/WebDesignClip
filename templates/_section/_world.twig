@@ -1,36 +1,38 @@
-<section id="section-world" class="tab-content active section-content">
-    {% set worldEntries = craft.entries()
-        .section('sectionWorld')
-        .type('entrycontent')
+{% block content %}
+    <section id="section-world" class="tab-content active section-content">
+        {% set worldEntries = craft.entries()
+            .section('sectionWorld')
+            .type('entrycontent')
 
-        .all() %}
+            .all() %}
 
-    {# Splideスライダーの実装 #}
-    <div class="splide" id="section-splide">
-        <div class="splide__track">
-            <div class="splide__list">
-                {# 1ページ目 #}
-                <div class="splide__slide">
-                    <div class="section-content__grid">
-                        {% for entry in worldEntries|slice(0, 12) %}
-                            {% include "_entry/_index.twig" with { entry: entry } %}
-                        {% endfor %}
+        {# Splideスライダーの実装 #}
+        <div class="splide" id="section-splide">
+            <div class="splide__track">
+                <div class="splide__list">
+                    {# 1ページ目 #}
+                    <div class="splide__slide">
+                        <div class="section-content__grid">
+                            {% for entry in worldEntries|slice(0, 12) %}
+                                {% include "_entry/_index.twig" with { entry: entry } %}
+                            {% endfor %}
+                        </div>
                     </div>
-                </div>
 
-                {# 2ページ目 #}
-                <div class="splide__slide">
-                    <div class="section-content__grid">
-                        {% for entry in worldEntries|slice(12, 12) %}
-                            {% include "_entry/_index.twig" with { entry: entry } %}
-                        {% endfor %}
+                    {# 2ページ目 #}
+                    <div class="splide__slide">
+                        <div class="section-content__grid">
+                            {% for entry in worldEntries|slice(12, 12) %}
+                                {% include "_entry/_index.twig" with { entry: entry } %}
+                            {% endfor %}
+                        </div>
                     </div>
-                </div>
 
+                </div>
             </div>
-        </div>
 
-        {# Splideのページネーション #}
-        <div class="splide__pagination"></div>
-    </div>
-</section>
+            {# Splideのページネーション #}
+            <div class="splide__pagination"></div>
+        </div>
+    </section>
+{% endblock %}
