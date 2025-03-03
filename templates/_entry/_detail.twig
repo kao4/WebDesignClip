@@ -12,14 +12,13 @@
 
     <article class="entry-detail">
         <a href="{{ entry.url }}" class="entry-detail__link">
-            {# {% if entry.entryImage %}
+            {% if entry.entryImage %}
                 <img src="{{ entry.entryImage.one().url }}"
                     alt="{{ entry.title }}" 
                     class="entry-detail__img" 
                     width="622" 
                     height="410">
-            {% endif %}  #}
-            <img src="web/images/detail__img.webp" alt="" width="622" height="410" class="entry-detail__img">
+            {% endif %} 
         </a>    
         <div class="entry-detail__main">
             <h1 class="entry-detail__title">{{ entry.title }}</h1>
@@ -47,9 +46,6 @@
             </li>
 	    </ul>
     </article>
-
- {# 次のサイトへのナビゲーション #}
-    {% include "_components/_next-site-nav.twig" %}
 
     {# フッター #}
     {% include "_components/_footer.twig" %}
