@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: ac8b4c59-b425-40f3-b7ff-8418a5469f40 # nextSiteNav
+handle: nextsitenav
+maxAuthors: 3
+name: nextSiteNav
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - プライマリのエントリページ
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  0982ccc7-8b77-445e-ac6b-ffbff5fc138b: # WebDesignClip
+    enabledByDefault: true
+    hasUrls: true
+    template: nextsitenav/_entry.twig
+    uriFormat: 'nextsitenav/{slug}'
+type: channel

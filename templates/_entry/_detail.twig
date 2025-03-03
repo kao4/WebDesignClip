@@ -13,11 +13,13 @@
     <article class="entry-detail">
         <a href="{{ entry.url }}" class="entry-detail__link">
             {% if entry.entryImage %}
-                <img src="{{ entry.entryImage.one().url }}"
-                    alt="{{ entry.title }}" 
-                    class="entry-detail__img" 
-                    width="622" 
-                    height="410">
+                {% for image in entry.entryImage.all() %}
+                    <img src="/Uploads/nextSiteImage/{{ image.filename }}"
+                        alt="{{ entry.title }}" 
+                        class="entry-detail__img" 
+                        width="622" 
+                        height="410">
+                {% endfor %}
             {% endif %} 
         </a>    
         <div class="entry-detail__main">

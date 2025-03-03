@@ -2,7 +2,7 @@
     <a href="{{ entry.url }}" class="content__link">
         {% if entry.entryImage|length %}
             {% for image in entry.entryImage.all() %}
-                <img src="{{ siteUrl }}uploads/sectionImage/{{ image.filename }}"
+                <img src="/Uploads/sectionImage/{{ image.filename }}"
                     alt="{{ entry.title }}"
                     class="content__img"
                     width="350"

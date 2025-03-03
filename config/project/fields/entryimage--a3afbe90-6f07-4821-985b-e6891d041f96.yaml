@@ -6,7 +6,7 @@ searchable: true
 settings:
   allowSelfRelations: false
   allowSubfolders: false
-  allowUploads: true
+  allowUploads: false
   allowedKinds:
     - image
   branchLimit: null
@@ -14,7 +14,7 @@ settings:
   defaultUploadLocationSubpath: '/sectionImage/{slug}'
   maintainHierarchy: false
   maxRelations: null
-  minRelations: null
+  minRelations: 0
   previewMode: full
   restrictFiles: false
   restrictLocation: false
