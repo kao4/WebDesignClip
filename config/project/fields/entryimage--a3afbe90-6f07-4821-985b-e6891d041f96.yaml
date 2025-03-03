@@ -11,7 +11,7 @@ settings:
     - image
   branchLimit: null
   defaultUploadLocationSource: 'volume:a8933d7d-7e49-4cb9-b272-82dd7b6a49c2' # Uploads
-  defaultUploadLocationSubpath: '@webroot/uploads/{slug}'
+  defaultUploadLocationSubpath: '/sectionImage/{slug}'
   maintainHierarchy: false
   maxRelations: null
   minRelations: null

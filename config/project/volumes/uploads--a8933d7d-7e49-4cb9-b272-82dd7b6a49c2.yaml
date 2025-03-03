@@ -2,6 +2,11 @@ altTranslationKeyFormat: null
 altTranslationMethod: none
 fieldLayouts:
   996a82e2-e946-468d-80b7-150c8848bdf0:
+    cardView:
+      - size
+      - kind
+      - filename
+      - link
     tabs:
       -
         elementCondition: null
