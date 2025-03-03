@@ -1,4 +1,4 @@
-dateModified: 1740972778
+dateModified: 1740983110
 elementSources:
   craft\elements\Asset:
     -
@@ -115,7 +115,7 @@ fs:
     hasUrls: true
     name: Uploads
     settings:
-      path: '@webroot/uploads/{slug}'
+      path: '@webroot/uploads'
     type: craft\fs\Local
     url: /uploads
 meta:

@@ -1,0 +1,19 @@
+<a href="{{ entry.url }}" class="next-site__item__link">
+    <div class="next-site__item">
+        {% if entry.nextSiteImage %}
+            {% for image in entry.nextSiteImage.all() %}
+                <img src="{{ image.url }}"
+                    alt="{{ entry.title }}" 
+                    class="item__img"
+                    width="120"
+                    height="80">
+            {% endfor %}
+        {% endif %}
+        <div class="next-site__text">
+            <p class="item__title">{{ entry.title }}</p>
+            <time datetime="{{ entry.nextSiteUploadDate|date('Y-m-d') }}">
+                {{ entry.nextSiteUploadDate|date('Y.m.d') }}
+            </time>
+        </div>
+    </div>
+</a>

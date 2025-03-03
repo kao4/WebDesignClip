@@ -48,7 +48,7 @@
     padding-block: 3em 2em;
     margin-bottom: 1em;
     gap: 1.2em;
-    color: #434343;
+    color: #f3f0ea;
     @media screen and (max-width: 1220px) {
       width: calc(600px + 4em);
       margin-inline: auto;
@@ -64,7 +64,7 @@
       justify-content: center;
       align-items: center;
       border-radius: 50%;
-      background: #f3f0ea;
+      background: #555;
     }
     img {
       border-radius: 50%;

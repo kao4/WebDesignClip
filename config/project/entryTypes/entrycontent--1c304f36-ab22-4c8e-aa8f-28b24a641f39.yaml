@@ -118,7 +118,7 @@ fieldLayouts:
         name: コンテンツ
         uid: 48c5d32f-7811-47d9-91ef-4c1312b17fed
         userCondition: null
-handle: entrycontent
+handle: entryContent
 hasTitleField: true
 icon: null
 name: entryContent
