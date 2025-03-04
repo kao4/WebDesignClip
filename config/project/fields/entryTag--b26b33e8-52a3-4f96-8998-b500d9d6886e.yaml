@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: entryTag
+instructions: null
+name: entryTag
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: カテゴリー
+  showCardsInGrid: false
+  showSiteMenu: true
+  source: 'taggroup:a49afc84-426e-4d48-ab2b-ae8a8beffb51' # entryTags
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Tags

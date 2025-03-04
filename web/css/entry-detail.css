@@ -1,5 +1,12 @@
+.entry-detail__wrapper {
+  display: flex;
+  justify-content: center;
+  padding-inline: 8em;
+  gap: 8em;
+}
+
 .entry-detail {
-  padding-inline: 10em;
+  display: block;
   color: #333;
   letter-spacing: 0.075em;
   line-height: 1.4em;
@@ -70,5 +77,23 @@
       border-radius: 50%;
       object-fit: cover;
     }
+  }
+  .entry-detail__tag {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8em;
+    margin-bottom: 3em;
+    .tag {
+      display: inline-block;
+      padding: 0.5em 1em;
+      font-size: 11px;
+      border-radius: 4px;
+      background-color: #f3f0e9;
+      color: #333;
+    }
+  }
+  .similar-site {
+    width: 30%;
+    display: block;
   }
 }

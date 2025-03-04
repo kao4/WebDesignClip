@@ -113,10 +113,15 @@ header {
       margin-top: 0.7em;
     }
     .content__category {
-      font-size: 14px;
+      font-size: 10px;
       align-self: flex-start;
       margin-top: auto;
       margin-bottom: 0.7em;
+      .tag {
+        display: block;
+        font-size: 12px;
+        margin-top: 0.7em;
+      }
     }
   }
   .content__link:hover .content__img {
@@ -196,78 +201,6 @@ header {
   background-color: #e0e0e0;
 }
 
-/* next-site-nav */
-#next-site-nav {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 350px);
-  grid-template-rows: 1fr;
-  gap: 4em;
-  margin: 5em auto;
-  justify-content: center;
-  @media screen and (min-width: 1600px) {
-    grid-template-columns: repeat(4, 350px);
-  }
-  @media screen and (max-width: 1220px) {
-    grid-template-columns: repeat(2, 300px);
-  }
-  @media screen and (max-width: 660px) {
-    grid-template-columns: repeat(1, 300px);
-  }
-}
-.next-site-nav-wrapper {
-  width: 350px;
-  height: auto;
-  color: #666;
-  font-size: 10px;
-  letter-spacing: 0.08em;
-  @media screen and (max-width: 1220px) {
-    width: 300px;
-  }
-  .next-site__title {
-    display: flex;
-    justify-content: center;
-    margin-block: 3.3em;
-    font-size: 12px;
-    position: relative;
-  }
-  .next-site__title::after {
-    content: "";
-    position: absolute;
-    bottom: -15px; /* 位置の微調整 */
-    left: 50%; /* 中央配置の起点 */
-    transform: translateX(-50%); /* 中央寄せ */
-    width: 15px; /* ボーダーの長さ */
-    height: 1px; /* ボーダーの太さ */
-    background: #242424; /* ボーダーの色 */
-  }
-  .next-site__item {
-    display: flex;
-    background: #f3f0ea;
-    margin-block: 2em;
-    gap: 1.2em;
-    transition: filter 0.3s ease, opacity 0.3s ease;
-  }
-  .next-site__item:hover {
-    filter: brightness(1.1);
-    opacity: 0.8;
-  }
-  .next-site__text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-block: 1.8em;
-  }
-}
-.next-site-nav-wrapper:nth-of-type(4) {
-  display: none;
-  @media screen and (min-width: 1600px) {
-    display: block;
-  }
-  @media screen and (max-width: 1220px) {
-    display: block;
-  }
-}
 /* footer */
 footer {
   width: 100%;

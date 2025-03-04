@@ -15,11 +15,11 @@
             </time>    
             <div class="content__category">
                 <span>CATEGORY</span>
-                <p>
-                    {% if entry.entryTag|length %}
-                        {{ entry.entryTag.one().title ?? '企業サイト・事務所・ビジネス' }}
-                    {% endif %}
-                </p>
+                {% if entry.entryTag|length %}
+                    <div class="entry-detail__tag">
+                        <span class="tag">{{ entry.entryTag.one().title }}</span>
+                    </div>
+                {% endif %}
             </div>                      
         </div>
     </a>   

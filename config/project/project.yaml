@@ -1,4 +1,4 @@
-dateModified: 1740983110
+dateModified: 1740989020
 elementSources:
   craft\elements\Asset:
     -
@@ -125,9 +125,7 @@ meta:
     2db5f188-54bb-444b-ba3d-4754dbc5bc39: nextSiteUploadDate # nextSiteUploadDate
     4a32fc6d-95d3-4754-a5ba-6949b01d01c7: entryUrl # entryUrl
     05a7c8c9-9d3a-4fb4-8e24-c290ccc4b244: Japan # Japan
-    6b4670b9-8756-40d5-ab5d-de18e548712b: entrySns # entrySns
     87a01ad4-7251-4ef2-bd7c-46f111fff5f5: WebDesignClip # WebDesignClip
-    257aa078-3424-4e7a-a784-d35c2ee5d07e: entryTag # entryTag
     956f99d8-d09d-4b67-82d6-a772345d1631: World # World
     0982ccc7-8b77-445e-ac6b-ffbff5fc138b: WebDesignClip # WebDesignClip
     4763bed9-f39f-4e97-9935-1db870ccf2eb: nextSiteImage # nextSiteImage
@@ -135,10 +133,12 @@ meta:
     85302b02-7607-4111-9e0c-9e51b19456fa: nextSiteNavLandingPage # nextSiteNavLandingPage
     35254843-396f-4004-a910-d243b32b45ac: nextSiteNavJapan # nextSiteNavJapan
     a3afbe90-6f07-4821-985b-e6891d041f96: entryImage # entryImage
+    a49afc84-426e-4d48-ab2b-ae8a8beffb51: entryTags # entryTags
     a8933d7d-7e49-4cb9-b272-82dd7b6a49c2: Uploads # Uploads
     a87492ec-70a1-4e6a-bc78-72ceb57353c9: nextSiteTitle # nextSiteTitle
     ac8b4c59-b425-40f3-b7ff-8418a5469f40: nextSiteNav # nextSiteNav
     b21cc698-c62d-458a-8cb4-3cd1f1561d78: nextSiteNav # nextSiteNav
+    b26b33e8-52a3-4f96-8998-b500d9d6886e: entryTag # entryTag
     cc42596a-8986-4561-9c52-29a5ee977fb9: LandingPage # LandingPage
     ea976903-2cc8-487d-aff1-61f99c873b37: entryDiscription # entryDiscription
     ebe3c285-a23d-47f3-bcc0-de050c385a55: nextSiteNavSmartphone # nextSiteNavSmartphone

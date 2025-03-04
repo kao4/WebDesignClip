@@ -23,6 +23,6 @@ siteSettings:
   0982ccc7-8b77-445e-ac6b-ffbff5fc138b: # WebDesignClip
     enabledByDefault: true
     hasUrls: true
-    template: landingpage/_entry.twig
+    template: landingpage/_detail
     uriFormat: 'landingpage/{slug}'
 type: channel

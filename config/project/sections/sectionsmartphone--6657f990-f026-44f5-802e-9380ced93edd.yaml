@@ -23,6 +23,6 @@ siteSettings:
   0982ccc7-8b77-445e-ac6b-ffbff5fc138b: # WebDesignClip
     enabledByDefault: true
     hasUrls: true
-    template: sectionsmartphone/_entry.twig
+    template: sectionsmartphone/_detail
     uriFormat: 'sectionsmartphone/{slug}'
 type: channel

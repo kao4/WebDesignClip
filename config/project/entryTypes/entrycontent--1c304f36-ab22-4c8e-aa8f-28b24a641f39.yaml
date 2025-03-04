@@ -84,9 +84,9 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2025-02-21T01:55:08+00:00'
+            dateAdded: '2025-03-03T07:54:19+00:00'
             elementCondition: null
-            fieldUid: 6b4670b9-8756-40d5-ab5d-de18e548712b # entrySns
+            fieldUid: b26b33e8-52a3-4f96-8998-b500d9d6886e # entryTag
             handle: null
             includeInCards: false
             instructions: null
@@ -95,23 +95,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 99767049-60b0-406c-9388-08b4c7f72954
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2025-02-21T01:55:08+00:00'
-            elementCondition: null
-            fieldUid: 257aa078-3424-4e7a-a784-d35c2ee5d07e # entryTag
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 12720690-b07d-4092-b90a-45e2e19b48c2
+            uid: a74591f5-2547-4340-82dc-4f9303667fba
             userCondition: null
             warning: null
             width: 100
