@@ -1,16 +1,15 @@
 .entry-detail__wrapper {
+  max-width: 1050px;
+  width: 100%;
   display: flex;
   justify-content: center;
-  padding: 7vw;
-  gap: 7vw;
-  @media screen and (max-width: 1030px) {
-    padding: 6vh 8vw;
-    gap: 7vw;
-  }
+  margin: 0 auto;
+  padding: 3vw;
+  gap: 3vw;
+  box-sizing: border-box;
   @media screen and (max-width: 860px) {
     flex-direction: column;
-    padding: 3em 5em;
-    gap: 5em;
+    gap: 5vh;
   }
   .entry-detail {
     width: 100%;
@@ -18,7 +17,7 @@
     color: #333;
     letter-spacing: 0.075em;
     line-height: 1.4em;
-    @media screen and (max-width: 1030px) {
+    @media screen and (max-width: 1050px) {
       width: 70%;
     }
     @media screen and (max-width: 860px) {
@@ -27,9 +26,9 @@
     .entry-detail__img {
       width: 100%;
       display: flex;
-      margin: 0 auto 2em 0;
+      margin: 0 auto 2rem 0;
       @media screen and (max-width: 860px) {
-        margin: 0 auto 2em;
+        margin: 0 auto 2rem;
       }
     }
     .entry-detail__main {
@@ -37,24 +36,24 @@
       flex-direction: column;
       align-items: left;
       .entry-detail__title {
-        font-size: 1.5em;
-        margin-bottom: 0.3em;
+        font-size: 1.5rem;
+        margin-bottom: 0.3rem;
       }
       .entry-detai__url,
       .entry-detail__desc {
-        font-size: 0.78em;
-        margin-bottom: 0.3em;
+        font-size: 0.78rem;
+        margin-bottom: 0.3rem;
       }
     }
     .entry-detail__sns-nav {
       display: flex;
-      padding-block: 3em 2em;
-      margin-bottom: 1em;
-      gap: 1.2em;
+      padding-block: 3rem 2rem;
+      margin-bottom: 1rem;
+      gap: 1.2rem;
       color: #f3f0ea;
       @media screen and (max-width: 860px) {
-        padding-block: 2em 1em;
-        gap: 1em;
+        padding-block: 2rem 1rem;
+        gap: 1rem;
       }
       li {
         width: 35px;
@@ -73,14 +72,14 @@
     .entry-detail__tag {
       display: flex;
       flex-wrap: wrap;
-      gap: 0.5em;
-      margin-bottom: 3em;
+      gap: 0.5rem;
+      margin-bottom: 3rem;
       @media screen and (max-width: 860px) {
         margin-bottom: 0;
       }
       .tag {
         display: inline-block;
-        padding: 0.5em 1em;
+        padding: 0.5rem 1rem;
         font-size: 11px;
         border-radius: 4px;
         background-color: #f3f0e9;
@@ -88,10 +87,17 @@
       }
     }
   }
+
+  /* similar site */
   .similar-site {
     display: block;
     @media screen and (max-width: 860px) {
       width: 100%;
+    }
+    .next-site__item__link:nth-of-type(n + 4) {
+      @media screen and (max-width: 860px) {
+        display: none;
+      }
     }
     .next-site__item__link {
       width: 50%;

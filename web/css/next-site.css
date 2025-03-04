@@ -5,7 +5,7 @@
   grid-template-columns: repeat(3, 350px);
   grid-template-rows: 1fr;
   gap: 4em;
-  margin: 5em auto;
+  margin: 5rem auto;
   justify-content: center;
   @media screen and (min-width: 1600px) {
     grid-template-columns: repeat(4, 350px);
@@ -29,7 +29,7 @@
   .next-site__title {
     display: flex;
     justify-content: center;
-    margin-block: 3.3em;
+    margin-block: 3rem;
     font-size: 12px;
     position: relative;
   }
@@ -46,8 +46,8 @@
   .next-site__item {
     display: flex;
     background: #f3f0ea;
-    margin-block: 2em;
-    gap: 1.2em;
+    margin-block: 2rem;
+    gap: 1.2rem;
     transition: filter 0.3s ease, opacity 0.3s ease;
   }
   .next-site__item:hover {

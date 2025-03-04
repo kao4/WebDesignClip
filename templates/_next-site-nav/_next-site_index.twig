@@ -3,11 +3,11 @@
     <h4 class="next-site__title">World</h4>
     <div class="next-site__item__wrapper">
     {# nextSiteNavセクションからエントリーを取得 #}
-      {% set nexeNavEntries = craft.entries()
+      {% set nextNavEntries = craft.entries()
       .section('nextSiteNav')
       .limit(3)
       .all() %}
-     {% for entry in nexeNavEntries|slice(0, 3) %}
+     {% for entry in nextNavEntries|slice(0, 3) %}
         {% include "_next-site-nav/_next-site_detail.twig" with { entry: entry } %}
      {% endfor %}
     </div>
@@ -16,11 +16,11 @@
     <h4 class="next-site__title">Landing Page</h4>
     <div class="next-site__item__wrapper">
     {# nextSiteNavセクションからエントリーを取得 #}
-      {% set nexeNavEntries = craft.entries()
+      {% set nextNavEntries = craft.entries()
       .section('nextSiteNav')
       .limit(3)
       .all() %}
-     {% for entry in nexeNavEntries|slice(0, 3) %}
+     {% for entry in nextNavEntries|slice(0, 3) %}
         {% include "_next-site-nav/_next-site_detail.twig" with { entry: entry } %}
      {% endfor %}
     </div>
@@ -29,11 +29,11 @@
     <h4 class="next-site__title">Smartphone</h4>
     <div class="next-site__item__wrapper">
     {# nextSiteNavセクションからエントリーを取得 #}
-      {% set nexeNavEntries = craft.entries()
+      {% set nextNavEntries = craft.entries()
       .section('nextSiteNav')
       .limit(3)
       .all() %}
-     {% for entry in nexeNavEntries|slice(0, 3) %}
+     {% for entry in nextNavEntries|slice(0, 3) %}
         {% include "_next-site-nav/_next-site_detail.twig" with { entry: entry } %}
      {% endfor %}
     </div>
@@ -42,11 +42,11 @@
     <h4 class="next-site__title">webclips</h4>
     <div class="next-site__item__wrapper">
     {# nextSiteNavセクションからエントリーを取得 #}
-      {% set nexeNavEntries = craft.entries()
+      {% set nextNavEntries = craft.entries()
       .section('nextSiteNav')
       .limit(3)
       .all() %}
-     {% for entry in nexeNavEntries|slice(0, 3) %}
+     {% for entry in nextNavEntries|slice(0, 3) %}
         {% include "_next-site-nav/_next-site_detail.twig" with { entry: entry } %}
      {% endfor %}
     </div>
