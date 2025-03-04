@@ -35,6 +35,9 @@ header {
   padding: 1.5rem 2rem;
   cursor: pointer;
 }
+.tab-contents {
+  position: relative;
+}
 .tab.active {
   /* background: #fff; */
   border-bottom: 1px solid #242424;
@@ -54,151 +57,152 @@ header {
 .section-content {
   width: 100%;
   display: block;
-}
-.section-content__grid {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 350px); /* 固定幅350pxで3カラム */
-  grid-template-rows: repeat(2, 1fr);
-  gap: 4rem;
-  margin: 5rem auto;
-  justify-content: center;
-  @media screen and (min-width: 1600px) {
-    grid-template-columns: repeat(4, 350px);
-  }
-  @media screen and (max-width: 1220px) {
-    grid-template-columns: repeat(2, 300px);
-  }
-  @media screen and (max-width: 660px) {
-    grid-template-columns: repeat(1, 300px);
-  }
-}
-.content__wrapper {
-  width: 350px;
-  display: block;
-  background: #f5f5f5;
-  color: #666666;
-  position: relative;
-  overflow: hidden;
-  @media screen and (max-width: 1220px) {
-    width: 300px;
-  }
-  .content__link {
-    position: relative;
-    display: block;
-    overflow: hidden;
-  }
-  .content__img {
+
+  .section-content__grid {
     width: 100%;
-    height: 229px;
-    transition: transform 0.3s ease;
-  }
-  .hover-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0.7rem;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    time {
-      font-size: 12px;
-      align-self: flex-start;
-      margin-top: 0.7rem;
+    display: grid;
+    grid-template-columns: repeat(3, 350px); /* 固定幅350pxで3カラム */
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4rem;
+    margin: 5rem auto;
+    justify-content: center;
+    @media screen and (min-width: 1600px) {
+      grid-template-columns: repeat(4, 350px);
     }
-    .content__category {
-      font-size: 10px;
-      align-self: flex-start;
-      margin-top: auto;
-      margin-bottom: 0.7rem;
-      .tag {
-        display: block;
+    @media screen and (max-width: 1220px) {
+      grid-template-columns: repeat(2, 300px);
+    }
+    @media screen and (max-width: 660px) {
+      grid-template-columns: repeat(1, 300px);
+    }
+  }
+  .content__wrapper {
+    width: 350px;
+    display: block;
+    background: #f5f5f5;
+    color: #666666;
+    position: relative;
+    overflow: hidden;
+    @media screen and (max-width: 1220px) {
+      width: 300px;
+    }
+    .content__link {
+      position: relative;
+      display: block;
+      overflow: hidden;
+    }
+    .content__img {
+      width: 100%;
+      height: 229px;
+      transition: transform 0.3s ease;
+    }
+    .hover-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 0.7rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      time {
         font-size: 12px;
+        align-self: flex-start;
         margin-top: 0.7rem;
       }
+      .content__category {
+        font-size: 10px;
+        align-self: flex-start;
+        margin-top: auto;
+        margin-bottom: 0.7rem;
+        .tag {
+          display: block;
+          font-size: 12px;
+          margin-top: 0.7rem;
+        }
+      }
+    }
+    .content__link:hover .content__img {
+      transform: scale(1.1);
+    }
+
+    .content__link:hover .hover-text {
+      opacity: 0.9;
+    }
+    .content__title {
+      font-size: 13px;
+      padding: 1rem 1.2rem 0.8rem;
+    }
+    .content__url {
+      font-size: 10px;
+      padding-inline: 1.5rem;
+      padding-bottom: 1.5rem;
     }
   }
-  .content__link:hover .content__img {
-    transform: scale(1.1);
+
+  /* Splideのカスタマイズ */
+  .splide {
+    margin: 2rem 0;
+    position: relative;
   }
 
-  .content__link:hover .hover-text {
-    opacity: 0.9;
+  .splide__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    gap: 1rem;
+    position: relative;
+    .splide__pagination--ltr {
+      display: none;
+    }
   }
-  .content__title {
-    font-size: 13px;
-    padding: 1rem 1.2rem 0.8rem;
+
+  /* 矢印ボタンのポジショニング */
+  .splide__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    @media screen and (max-width: 1500px) {
+      display: none;
+    }
   }
-  .content__url {
-    font-size: 10px;
-    padding-inline: 1.5rem;
-    padding-bottom: 1.5rem;
+
+  .splide__pagination__page,
+  .splide__arrow {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #f0f0f0;
+    color: #666;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
   }
-}
 
-/* Splideのカスタマイズ */
-.splide {
-  margin: 2rem 0;
-  position: relative;
-}
-
-.splide__pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 0;
-  gap: 1rem;
-  position: relative;
-  .splide__pagination--ltr {
-    display: none;
+  /* アクティブなページ番号のスタイル */
+  .splide__pagination__page.is-active {
+    background-color: #666;
+    color: white;
+    transform: scale(1);
+    opacity: 1;
   }
-}
 
-/* 矢印ボタンのポジショニング */
-.splide__arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  @media screen and (max-width: 1500px) {
-    display: none;
+  /* ホバー効果 */
+  .splide__pagination__page:hover:not(.is-active),
+  .splide__arrow:hover {
+    background-color: #e0e0e0;
   }
-}
-
-.splide__pagination__page,
-.splide__arrow {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  font-weight: 500;
-  background-color: #f0f0f0;
-  color: #666;
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-/* アクティブなページ番号のスタイル */
-.splide__pagination__page.is-active {
-  background-color: #666;
-  color: white;
-  transform: scale(1);
-  opacity: 1;
-}
-
-/* ホバー効果 */
-.splide__pagination__page:hover:not(.is-active),
-.splide__arrow:hover {
-  background-color: #e0e0e0;
 }
 
 /* footer */

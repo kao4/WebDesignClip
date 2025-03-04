@@ -1,9 +1,17 @@
 <!-- タブボタン -->
 <nav class="header__nav">
   <ul class="tabs">
-    <li class="tab active" data-tab="section-japan">Japan</li>
-    <li class="tab" data-tab="section-world">World</li>
-    <li class="tab" data-tab="section-landingPage">Landing Page</li>
-    <li class="tab" data-tab="section-smartphone">Smartphone</li>
+    <li role="presentation">
+      <button type="button" class="tab active" data-tab="section-japan" role="tab" aria-selected="true">Japan</button>
+    </li>
+    <li role="presentation">
+      <button type="button" class="tab" data-tab="section-world" role="tab" aria-selected="false">World</button>
+    </li>
+    <li role="presentation">
+      <button type="button" class="tab" data-tab="section-landingPage" role="tab" aria-selected="false">Landing Page</button>
+    </li>
+    <li role="presentation">
+      <button type="button" class="tab" data-tab="section-smartphone" role="tab" aria-selected="false">Smartphone</button>
+    </li>
   </ul>
 </nav>
