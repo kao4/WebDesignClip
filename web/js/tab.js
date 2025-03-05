@@ -32,7 +32,38 @@ document.addEventListener("DOMContentLoaded", function () {
             const slider = targetContent.querySelector(".splide");
             if (slider) {
               console.log("Reinitializing slider in:", targetId);
-              window.initSlider && window.initSlider();
+
+              // 既存のページネーション要素をクリア
+              const existingPagination = slider.querySelector(
+                ".splide__pagination"
+              );
+              if (existingPagination) {
+                existingPagination.innerHTML = "";
+              }
+
+              // 既存のSplideインスタンスを破棄
+              if (slider.splide) {
+                slider.splide.destroy(true);
+              }
+              // 新しいSplideインスタンスを作成
+              const newSplide = new Splide(slider, {
+                pagination: true,
+                perPage: 1,
+                arrows: true,
+                // 必要に応じて他のオプションを追加
+              });
+
+              //  mountedイベントハンドラを追加
+              newSplide.on("mounted", function () {
+                const bullets = slider.querySelectorAll(
+                  ".splide__pagination__page"
+                );
+                bullets.forEach(function (bullet, index) {
+                  bullet.textContent = index + 1;
+                });
+              });
+
+              newSplide.mount();
             }
           }
         }

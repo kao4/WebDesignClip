@@ -149,6 +149,7 @@ header {
   .splide {
     margin: 2rem 0;
     position: relative;
+    visibility: initial;
   }
 
   .splide__pagination {
@@ -158,9 +159,6 @@ header {
     padding: 2rem 0;
     gap: 1rem;
     position: relative;
-    .splide__pagination--ltr {
-      display: none;
-    }
   }
 
   /* 矢印ボタンのポジショニング */
