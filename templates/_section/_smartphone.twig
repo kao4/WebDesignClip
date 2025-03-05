@@ -1,6 +1,6 @@
 <section id="section-smartphone" class="tab-content section-content">
-    {% set japanEntries = craft.entries()
-        .section('sectionJapan')
+    {% set smartphoneEntries = craft.entries()
+        .section('sectionSmartphone')
         .type('entrycontent')
         .all() %}
 
@@ -11,7 +11,7 @@
                 {# 1ページ目 #}
                 <div class="splide__slide">
                     <div class="section-content__grid">
-                        {% for entry in japanEntries|slice(0, 12) %}
+                        {% for entry in smartphoneEntries|slice(0, 12) %}
                             {% include "_entry/_index.twig" with { entry: entry } %}
                         {% endfor %}
                     </div>
@@ -20,7 +20,7 @@
                 {# 2ページ目 #}
                 <div class="splide__slide">
                     <div class="section-content__grid">
-                        {% for entry in japanEntries|slice(12, 12) %}
+                        {% for entry in smartphoneEntries|slice(12, 12) %}
                             {% include "_entry/_index.twig" with { entry: entry } %}
                         {% endfor %}
                     </div>
