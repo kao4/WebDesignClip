@@ -1,0 +1,115 @@
+/* hamburger */
+.hamburger {
+  position: fixed;
+  top: 1.5rem;
+  right: 2rem;
+  z-index: 150;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.hamburger.is-active {
+    right: -5rem;
+}
+
+.hamburger.is-active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.hamburger.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.is-active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.hamburger span {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 1px;
+  background-color: #f3f0ea;
+  transition: transform 0.3s;
+}
+
+/* .hamburger.is-active span {
+  background-color: #242424;
+} */
+
+.hamburger span:nth-child(1) {
+  top: 30%;
+}
+
+.hamburger span:nth-child(2) {
+  top: 60%;
+}
+
+.hamburger span:nth-child(3) {
+  top: 90%;
+}
+
+/* drawer */
+/* bodyのトランジション設定 */
+body {
+    transition: transform 0.5s ease;
+    overflow-x: hidden; /* 横スクロールを防ぐ */
+}
+
+body.drawer-active {
+transform: translateX(-30%);
+}
+
+.drawer {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 130;
+  width: 30%;
+  height: 100vh;
+  background-color: #333333;
+  transform: translateX(100%); /* 初期状態では右に隠す */
+  transition: transform 0.5s ease, visibility 0.3s, opacity 0.3s;
+}
+
+.drawer.is-active {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(30%); /* アクティブ時に表示位置まで移動 */
+}
+
+.drawer-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.drawer__list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 50px;
+}
+
+.drawer__link {
+  color: #ffffff;
+}
+/* .sp-show {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .sp-show {
+    display: block;
+  }
+  .sp-none {
+    display: none;
+  }

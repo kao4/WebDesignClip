@@ -16,8 +16,7 @@ header {
   .header__title {
     font-size: 16px;
     letter-spacing: 0.03em;
-    margin: 2rem 0 0 1.4rem;
-    padding-bottom: 2rem;
+    padding: 2rem 0 2rem 2rem;
   }
 }
 /* タブのスタイル */
@@ -39,7 +38,6 @@ header {
   position: relative;
 }
 .tab.active {
-  /* background: #fff; */
   border-bottom: 1px solid #242424;
 }
 .tab:hover {
