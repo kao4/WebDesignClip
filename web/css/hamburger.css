@@ -9,10 +9,6 @@
   cursor: pointer;
 }
 
-.hamburger.is-active {
-    right: -5rem;
-}
-
 .hamburger.is-active span:nth-child(1) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(135deg);
@@ -37,10 +33,6 @@
   transition: transform 0.3s;
 }
 
-/* .hamburger.is-active span {
-  background-color: #242424;
-} */
-
 .hamburger span:nth-child(1) {
   top: 30%;
 }
@@ -54,16 +46,6 @@
 }
 
 /* drawer */
-/* bodyのトランジション設定 */
-body {
-    transition: transform 0.5s ease;
-    overflow-x: hidden; /* 横スクロールを防ぐ */
-}
-
-body.drawer-active {
-transform: translateX(-30%);
-}
-
 .drawer {
   visibility: hidden;
   opacity: 0;
@@ -76,12 +58,14 @@ transform: translateX(-30%);
   background-color: #333333;
   transform: translateX(100%); /* 初期状態では右に隠す */
   transition: transform 0.5s ease, visibility 0.3s, opacity 0.3s;
+  /* bodyのトランジション設定 */
+  
 }
 
 .drawer.is-active {
   visibility: visible;
   opacity: 1;
-  transform: translateX(30%); /* アクティブ時に表示位置まで移動 */
+  transform: translateX(0); /* アクティブ時に表示位置まで移動 */
 }
 
 .drawer-inner {
