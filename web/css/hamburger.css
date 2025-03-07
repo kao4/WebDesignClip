@@ -7,6 +7,30 @@
   width: 2rem;
   height: 2rem;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ホバー時の円形背景 */
+.hamburger::before {
+  content: "";
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.hamburger:hover::before {
+  opacity: 0.1;
+}
+
+.hamburger.is-active {
+  right: -28%;
 }
 
 .hamburger.is-active span:nth-child(1) {
@@ -34,18 +58,28 @@
 }
 
 .hamburger span:nth-child(1) {
-  top: 30%;
+  top: 23%;
 }
 
 .hamburger span:nth-child(2) {
-  top: 60%;
+  top: 50%;
 }
 
 .hamburger span:nth-child(3) {
-  top: 90%;
+  top: 77%;
 }
 
 /* drawer */
+/* mainコンテンツのトランジション設定 */
+main {
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+main.drawer-active {
+  transform: translateX(-30%);
+}
+
 .drawer {
   visibility: hidden;
   opacity: 0;
@@ -58,14 +92,12 @@
   background-color: #333333;
   transform: translateX(100%); /* 初期状態では右に隠す */
   transition: transform 0.5s ease, visibility 0.3s, opacity 0.3s;
-  /* bodyのトランジション設定 */
-  
 }
 
 .drawer.is-active {
   visibility: visible;
   opacity: 1;
-  transform: translateX(0); /* アクティブ時に表示位置まで移動 */
+  transform: translateX(100%); /* アクティブ時に表示位置まで移動 */
 }
 
 .drawer-inner {
@@ -75,25 +107,3 @@
   height: 100%;
   padding: 0 20px;
 }
-
-.drawer__list {
-  display: flex;
-  flex-direction: column;
-
-  gap: 50px;
-}
-
-.drawer__link {
-  color: #ffffff;
-}
-/* .sp-show {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .sp-show {
-    display: block;
-  }
-  .sp-none {
-    display: none;
-  }
