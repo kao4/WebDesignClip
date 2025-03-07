@@ -7,72 +7,73 @@
     {# ヘッダー #}
     {% include "_components/_header.twig" %}
 
-    {# タブナビゲーション #} 
-    {% include "_components/_tab.twig" %} 
+    <main>
+        {# タブナビゲーション #} 
+        {% include "_components/_tab.twig" %} 
 
-    {# エントリ詳細 #}
-    <div class="entry-detail__wrapper">
-        <article class="entry-detail">
-            <a href="{{ entry.entryUrl }}" class="entry-detail__link">
-                {% set entryImages = entry.entryImage.all() %}
-                {% if entryImages|length %}
-                    {% for image in entryImages %}
-                        <img src="{{ image.url }}"
-                            alt="{{ entry.title }}" 
-                            class="entry-detail__img" 
-                            width="622" 
-                            height="410">
-                    {% endfor %}
-                {% endif %}
-            </a> 
-            <div class="entry-detail__main">
-                <h4 class="entry-detail__title">{{ entry.title }}</h4>
-                <span class="entry-detai__url">{{ entry.entryUrl }}</span>
-                <p class="entry-detail__desc">{{ entry.entryDiscription }}</p>
-            </div>
-            <ul class="entry-detail__sns-nav">
-                <li>
-                    <a href="#" class="sns__fb" target="_blank" aria-label="facebook">
-                        <img src="/images/sns01.svg" alt="" width="15" height="15" class="sns__fb-logo"/></a>
-                </li>
-                <li>
-                    <a href="#" class="sns__x" target="_blank" aria-label="x">
-                        <img src="/images/sns02.svg" alt="" width="15" height="15" class="sns__fb-logo"/></a>
-                </li>
-                <li>
-                    <a href="#" class="sns__ht" target="_blank" aria-label="hatena">
-                        <img src="/images/sns03.webp" alt="" width="32" height="32" class="sns__fb-logo"/></a>
-                </li>
-                <li>
-                    <a href="#" class="sns__fd" target="_blank" aria-label="feedly">
-                        <img src="/images/sns04.svg" alt="" width="15" height="15" class="sns__fb-logo"/></a>
-                </li>
-            </ul>
-
-            {% if entry.entryTag|length %}
-                <div class="entry-detail__tag">
-                    {% for tag in entry.entryTag %}
-                        <span class="tag">{{ tag.title }}</span>
-                    {% endfor %}
+        {# エントリ詳細 #}
+        <div class="entry-detail__wrapper">
+            <article class="entry-detail">
+                <a href="{{ entry.entryUrl }}" class="entry-detail__link">
+                    {% set entryImages = entry.entryImage.all() %}
+                    {% if entryImages|length %}
+                        {% for image in entryImages %}
+                            <img src="{{ image.url }}"
+                                alt="{{ entry.title }}" 
+                                class="entry-detail__img" 
+                                width="622" 
+                                height="410">
+                        {% endfor %}
+                    {% endif %}
+                </a> 
+                <div class="entry-detail__main">
+                    <h4 class="entry-detail__title">{{ entry.title }}</h4>
+                    <span class="entry-detai__url">{{ entry.entryUrl }}</span>
+                    <p class="entry-detail__desc">{{ entry.entryDiscription }}</p>
                 </div>
-            {% endif %}
-        </article>
-    
-        <div class="next-site-nav-wrapper similar-site">
-            <h5 class="next-site__title">SIMILAR SITE</h5>
-            <div class="next-site__item__wrapper">
-                {# nextSiteNavセクションからエントリーを取得 #}
-                {% set nextNavEntries = craft.entries()
-                .section('nextSiteNav')
-                .limit(7)
-                .all() %}
-                {% for entry in nextNavEntries|slice(0, 7) %}
-                    {% include "_next-site-nav/_next-site_detail.twig" with { entry: entry } only %}
-                {% endfor %}
-            </div>    
+                <ul class="entry-detail__sns-nav">
+                    <li>
+                        <a href="#" class="sns__fb" target="_blank" aria-label="facebook">
+                            <img src="/images/sns01.svg" alt="" width="15" height="15" class="sns__fb-logo"/></a>
+                    </li>
+                    <li>
+                        <a href="#" class="sns__x" target="_blank" aria-label="x">
+                            <img src="/images/sns02.svg" alt="" width="15" height="15" class="sns__fb-logo"/></a>
+                    </li>
+                    <li>
+                        <a href="#" class="sns__ht" target="_blank" aria-label="hatena">
+                            <img src="/images/sns03.webp" alt="" width="32" height="32" class="sns__fb-logo"/></a>
+                    </li>
+                    <li>
+                        <a href="#" class="sns__fd" target="_blank" aria-label="feedly">
+                            <img src="/images/sns04.svg" alt="" width="15" height="15" class="sns__fb-logo"/></a>
+                    </li>
+                </ul>
+
+                {% if entry.entryTag|length %}
+                    <div class="entry-detail__tag">
+                        {% for tag in entry.entryTag %}
+                            <span class="tag">{{ tag.title }}</span>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </article>
+        
+            <div class="next-site-nav-wrapper similar-site">
+                <h5 class="next-site__title">SIMILAR SITE</h5>
+                <div class="next-site__item__wrapper">
+                    {# nextSiteNavセクションからエントリーを取得 #}
+                    {% set nextNavEntries = craft.entries()
+                    .section('nextSiteNav')
+                    .limit(7)
+                    .all() %}
+                    {% for entry in nextNavEntries|slice(0, 7) %}
+                        {% include "_next-site-nav/_next-site_detail.twig" with { entry: entry } only %}
+                    {% endfor %}
+                </div>    
+            </div>
         </div>
-    </div>
-    
+    </main>
 
     {# フッター #}
     {% include "_components/_footer.twig" %}

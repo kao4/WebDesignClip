@@ -11,11 +11,60 @@
     </div>
     <!-- ドロワーメニュー -->
     <div class="drawer js-drawer">
-        <div class="drawer-inner">
-        
-            <div class="drawer__nav">
-        
+        <div class="drawer__inner">
+            <h3 class="drawer__menu">MENU</h3>
+            <div class="drawer__search-nav">
+                <form role="search" aria-label="サイト内検索">
+                    <label for="search-input"></label>
+                    <input 
+                        type="search" 
+                        id="search-input" 
+                        name="q" 
+                        placeholder="キーワード検索"
+                        aria-label="サイト内検索">
+                    <button type="submit" class="drawer__search-button">
+                        <img src="/images/search_icon.svg" alt="検索ボタン" width="15" height="15" class="drawer__search_icon__img" aria-hidden="true">
+                    </button>
+                </form>
             </div>
+            <!-- タブボタン -->
+            <nav class="drawer__nav">
+                <ul class="tabs drawer__tabs" role="tablist">
+                    <li role="presentation">
+                      <button type="button" class="tab active" data-tab="" role="tab" aria-selected="true">Category</button>
+                    </li>
+                    <li role="presentation">
+                      <button type="button" class="tab" data-tab="" role="tab" aria-selected="false">Tag</button>
+                    </li>
+                </ul>
+                <!-- タブコンテンツ -->
+                <div class="tab-contents">
+                    <div id="drawer__tab-category" class="tab-content active" role="tabpanel" aria-labelledby="category-tab">
+                        <ul class="drawer__tab-category-list">
+                            <li><a href="">アパレル・ファッション</a></li>
+                            <li><a href="">インテリア・雑貨</a></li>
+                            <li><a href="">ウェディング・結婚</a></li>
+                            <li><a href="">デザイン事務所・制作会社</a></li>
+                            <li><a href="">写真・イラスト</a></li>
+                            <li><a href="">学校・教育</a></li>
+                            <li><a href="">建築・住宅</a></li>
+                            <li><a href="">情報・WEBサービス</a></li>
+                            <li><a href="">旅行・交通</a></li>
+                            <li><a href="">美容・健康</a></li>
+                            <li><a href="">自転車・バイク</a></li>
+                            <li><a href="">食品・飲料</a></li>
+                        </ul>
+                    </div>
+                    <div id="drawer__tab-tag" class="tab-content" role="tabpanel" aria-labelledby="tag-tab">
+                        <ul class="tag-list">
+                            <li><a href="">ミニマル</a></li>
+                            <li><a href="">モダン</a></li>
+                            <li><a href="">コーポレート</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav> 
         </div>
     </div>
 </header>

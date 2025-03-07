@@ -88,8 +88,11 @@ main.drawer-active {
   right: 0;
   z-index: 130;
   width: 30%;
-  height: 100vh;
-  background-color: #333333;
+  height: 100%;
+  background: #505050;
+  color: #f3f0ea;
+  font-size: 14px;
+  letter-spacing: 0.2rem;
   transform: translateX(100%); /* 初期状態では右に隠す */
   transition: transform 0.5s ease, visibility 0.3s, opacity 0.3s;
 }
@@ -100,10 +103,68 @@ main.drawer-active {
   transform: translateX(100%); /* アクティブ時に表示位置まで移動 */
 }
 
-.drawer-inner {
+.drawer__inner {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding: 0 20px;
+  flex-direction: column;
+}
+
+.drawer__menu {
+  padding: 2rem;
+}
+
+.drawer__search-nav {
+  margin-bottom: 3rem;
+  form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    #search-input {
+      width: 100%;
+      background: #545454;
+      color: #f3f0ea;
+      padding: 1rem;
+    }
+    .drawer__search-button {
+      width: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #434343;
+      .seach_icon__img {
+        padding: 2rem;
+      }
+    }
+  }
+}
+
+.drawer__nav {
+  .tabs {
+    background: #505050;
+    color: #f3f0ea;
+    li {
+      width: 100%;
+    }
+    .tab {
+      width: 100%;
+      color: #f3f0ea;
+    }
+    .tab.active {
+      border: none;
+      background: #434343;
+    }
+  }
+  .tab-contents {
+    height: 100%;
+    display: block;
+    background: #505050;
+    .drawer__tab-category-list {
+      padding-block: 1rem auto;
+    }
+    li {
+      padding: 1rem;
+    }
+  }
+  .tab-content.active {
+    background: #434343;
+  }
 }

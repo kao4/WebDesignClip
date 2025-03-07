@@ -15,21 +15,30 @@ const resetHamburgerHover = () => {
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("is-active");
   drawer.classList.toggle("is-active");
-  mainContent.classList.toggle("drawer-active");
+  if (mainContent) {
+    mainContent.classList.toggle("drawer-active");
+  }
 });
 
 drawerLinks.forEach((drawerLink) => {
   drawerLink.addEventListener("click", () => {
     hamburger.classList.remove("is-active");
     drawer.classList.remove("is-active");
-    mainContent.classList.remove("drawer-active");
+    if (mainContent) {
+      mainContent.classList.remove("drawer-active");
+    }
     resetHamburgerHover();
   });
 });
 
 drawer.addEventListener("click", () => {
-  hamburger.classList.remove("is-active");
+  // タブやタブコンテンツをクリックした場合は閉じない
+  if (e.target.closest(".tabs") || e.target.closest(".tab-contents")) {
+    return;
+  }
   drawer.classList.remove("is-active");
-  mainContent.classList.remove("drawer-active");
+  if (mainContent) {
+    mainContent.classList.remove("drawer-active");
+  }
   resetHamburgerHover();
 });
