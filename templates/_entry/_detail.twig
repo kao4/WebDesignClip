@@ -26,7 +26,7 @@
                 {% endif %}
             </a> 
             <div class="entry-detail__main">
-                <h4 class="entry-detail__title">{{ entry.title }}</h1>
+                <h4 class="entry-detail__title">{{ entry.title }}</h4>
                 <span class="entry-detai__url">{{ entry.entryUrl }}</span>
                 <p class="entry-detail__desc">{{ entry.entryDiscription }}</p>
             </div>
@@ -59,7 +59,7 @@
         </article>
     
         <div class="next-site-nav-wrapper similar-site">
-            <h5 class="next-site__title">SIMILAR SITE</h4>
+            <h5 class="next-site__title">SIMILAR SITE</h5>
             <div class="next-site__item__wrapper">
                 {# nextSiteNavセクションからエントリーを取得 #}
                 {% set nextNavEntries = craft.entries()
