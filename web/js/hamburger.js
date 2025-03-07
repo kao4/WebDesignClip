@@ -1,7 +1,6 @@
 const hamburger = document.querySelector(".js-hamburger");
 const drawer = document.querySelector(".js-drawer");
 const drawerLinks = document.querySelectorAll(".js-drawer a");
-const body = document.body;
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("is-active");

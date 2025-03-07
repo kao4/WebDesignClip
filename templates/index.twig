@@ -4,33 +4,35 @@
 {% set pageTitle = 'WebDesignClip' %} 
 
 {% block content %}
-    {# ヘッダー #}
-    {% include "_components/_header.twig" %}
+    <main class="main">
+        {# ヘッダー #}
+        {% include "_components/_header.twig" %}
 
-    {# タブナビゲーション #} 
-    {% include "_components/_tab.twig" %} 
+        {# タブナビゲーション #} 
+        {% include "_components/_tab.twig" %} 
 
-    {# 各セクション #}
-    <div class="tab-contents">
-        <div id="section-japan" class="tab-content active" role="tabpanel">
-            {% include "_section/_japan.twig" %}
+        {# 各セクション #}
+        <div class="tab-contents">
+            <div id="section-japan" class="tab-content active" role="tabpanel">
+                {% include "_section/_japan.twig" %}
+            </div>
+            <div id="section-world" class="tab-content" role="tabpanel">
+                {% include "_section/_world.twig" %}
+            </div>
+            <div id="section-landingPage" class="tab-content" role="tabpanel">
+                {% include "_section/_landingPage.twig" %}
+            </div>
+            <div id="section-smartphone" class="tab-content" role="tabpanel">
+                {% include "_section/_smartphone.twig" %}
+            </div>
         </div>
-        <div id="section-world" class="tab-content" role="tabpanel">
-            {% include "_section/_world.twig" %}
-        </div>
-        <div id="section-landingPage" class="tab-content" role="tabpanel">
-            {% include "_section/_landingPage.twig" %}
-        </div>
-        <div id="section-smartphone" class="tab-content" role="tabpanel">
-            {% include "_section/_smartphone.twig" %}
-        </div>
-    </div>
-    {# Splideのページネーション #}
-    <div class="splide__pagination"></div>
+        {# Splideのページネーション #}
+        <div class="splide__pagination"></div>
 
-    {# 次のサイトへのナビゲーション #}
-    {% include "_next-site-nav/_next-site_index.twig" %}
+        {# 次のサイトへのナビゲーション #}
+        {% include "_next-site-nav/_next-site_index.twig" %}
 
-    {# フッター #}
-    {% include "_components/_footer.twig" %}
+        {# フッター #}
+        {% include "_components/_footer.twig" %}
+    </main>
 {% endblock %}
