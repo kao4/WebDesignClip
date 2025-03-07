@@ -91,8 +91,6 @@ main.drawer-active {
   height: 100%;
   background: #505050;
   color: #f3f0ea;
-  font-size: 14px;
-  letter-spacing: 0.2rem;
   transform: translateX(100%); /* 初期状態では右に隠す */
   transition: transform 0.5s ease, visibility 0.3s, opacity 0.3s;
 }
@@ -109,6 +107,8 @@ main.drawer-active {
 }
 
 .drawer__menu {
+  font-size: 14px;
+  letter-spacing: 0.2rem;
   padding: 2rem;
 }
 
@@ -158,13 +158,26 @@ main.drawer-active {
     display: block;
     background: #505050;
     .drawer__tab-category-list {
-      padding-block: 1rem auto;
+      padding-block: 1.5rem;
     }
     li {
-      padding: 1rem;
+      font-size: 12px;
+      letter-spacing: 0.1rem;
+      padding: 1rem 1.5rem;
     }
   }
   .tab-content.active {
     background: #434343;
+  }
+  .drawer__tab-tag {
+    padding-block: 1.5rem;
+  }
+  .drawer__tag__category {
+    font-size: 14px;
+    letter-spacing: 0.1rem;
+    padding: 1rem 1.5rem;
+  }
+  .tag-list li {
+    padding: 0.5rem 2rem;
   }
 }
