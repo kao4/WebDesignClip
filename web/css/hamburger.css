@@ -11,7 +11,6 @@
   justify-content: center;
   align-items: center;
 }
-
 /* ホバー時の円形背景 */
 .hamburger::before {
   content: "";
@@ -24,29 +23,23 @@
   transition: opacity 0.3s ease;
   z-index: -1;
 }
-
 .hamburger:hover::before {
   opacity: 0.1;
 }
-
 .hamburger.is-active {
   right: -28%;
 }
-
 .hamburger.is-active span:nth-child(1) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(135deg);
 }
-
 .hamburger.is-active span:nth-child(2) {
   opacity: 0;
 }
-
 .hamburger.is-active span:nth-child(3) {
   top: 50%;
   transform: translate(-50%, -50%) rotate(-135deg);
 }
-
 .hamburger span {
   position: absolute;
   left: 50%;
@@ -56,15 +49,12 @@
   background-color: #f3f0ea;
   transition: transform 0.3s;
 }
-
 .hamburger span:nth-child(1) {
   top: 23%;
 }
-
 .hamburger span:nth-child(2) {
   top: 50%;
 }
-
 .hamburger span:nth-child(3) {
   top: 77%;
 }
@@ -75,11 +65,9 @@ main {
   width: 100%;
   transition: transform 0.5s ease;
 }
-
 main.drawer-active {
   transform: translateX(-30%);
 }
-
 .drawer {
   visibility: hidden;
   opacity: 0;
@@ -94,24 +82,20 @@ main.drawer-active {
   transform: translateX(100%); /* 初期状態では右に隠す */
   transition: transform 0.5s ease, visibility 0.3s, opacity 0.3s;
 }
-
 .drawer.is-active {
   visibility: visible;
   opacity: 1;
   transform: translateX(100%); /* アクティブ時に表示位置まで移動 */
 }
-
 .drawer__inner {
   display: flex;
   flex-direction: column;
 }
-
 .drawer__menu {
   font-size: 14px;
   letter-spacing: 0.2rem;
   padding: 2rem;
 }
-
 .drawer__search-nav {
   margin-bottom: 3rem;
   form {
@@ -136,7 +120,6 @@ main.drawer-active {
     }
   }
 }
-
 .drawer__nav {
   .tabs {
     background: #505050;
@@ -157,27 +140,59 @@ main.drawer-active {
     height: 100%;
     display: block;
     background: #505050;
+    opacity: 0.8;
     .drawer__tab-category-list {
       padding-block: 1.5rem;
     }
     li {
-      font-size: 12px;
+      font-size: 13px;
       letter-spacing: 0.1rem;
-      padding: 1rem 1.5rem;
+      padding-block: 1rem;
+      padding-inline: 1.5rem;
+      position: relative;
+      overflow: hidden;
+      transition: filter 0.3s ease;
+    }
+    li::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: #434343;
+      transition: left 0.3s ease;
+      z-index: -1;
+    }
+    li:hover {
+      filter: brightness(1.2);
+    }
+    li:hover::before {
+      left: 0; /* 背景を左から右へ */
     }
   }
   .tab-content.active {
     background: #434343;
   }
-  .drawer__tab-tag {
+  #drawer__tab-tag {
     padding-block: 1.5rem;
   }
   .drawer__tag__category {
-    font-size: 14px;
-    letter-spacing: 0.1rem;
-    padding: 1rem 1.5rem;
+    font-size: 17px;
+    padding: 1.5rem;
+    position: relative;
+  }
+  .drawer__tag__category::before {
+    display: block;
+    position: absolute;
+    content: "";
+    bottom: 1rem;
+    width: 100%;
+    height: 0.3px;
+    background: #bbb;
+    opacity: 0.5;
   }
   .tag-list li {
-    padding: 0.5rem 2rem;
+    padding-block: 1rem;
   }
 }
