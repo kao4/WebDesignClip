@@ -131,16 +131,18 @@ main.drawer-active {
       width: 100%;
       color: #f3f0ea;
     }
+    .tab:hover {
+      background: #505050;
+      color: #fff;
+    }
     .tab.active {
       border: none;
       background: #434343;
     }
   }
   .tab-contents {
-    height: 100%;
     display: block;
     background: #505050;
-    opacity: 0.8;
     .drawer__tab-category-list {
       padding-block: 1.5rem;
     }
