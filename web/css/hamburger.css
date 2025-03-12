@@ -140,11 +140,26 @@ main.drawer-active {
       background: #434343;
     }
   }
+  #drawer__tab-category {
+    height: auto;
+  }
   .tab-contents {
     display: block;
     background: #505050;
     .drawer__tab-category-list {
       padding-block: 1.5rem;
+      margin-inline: 1.5rem;
+      position: relative;
+    }
+    .drawer__tab-category-list::after {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 90%;
+      height: 1px;
+      bottom: -1rem;
+      left: 1.5rem;
+      background: #fff;
     }
     li {
       font-size: 13px;
@@ -172,6 +187,13 @@ main.drawer-active {
     li:hover::before {
       left: 0; /* 背景を左から右へ */
     }
+  }
+  .drawer__site-discription {
+    font-size: 13px;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+    padding-block: 4rem 5rem;
+    padding-inline: 3rem;
   }
   .tab-content.active {
     background: #434343;
