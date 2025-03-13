@@ -148,18 +148,6 @@ main.drawer-active {
     background: #505050;
     .drawer__tab-category-list {
       padding-block: 1.5rem;
-      margin-inline: 1.5rem;
-      position: relative;
-    }
-    .drawer__tab-category-list::after {
-      display: block;
-      content: "";
-      position: absolute;
-      width: 90%;
-      height: 1px;
-      bottom: -1rem;
-      left: 1.5rem;
-      background: #fff;
     }
     li {
       font-size: 13px;
@@ -189,34 +177,37 @@ main.drawer-active {
     }
   }
   .drawer__site-discription {
+    width: 100%;
     font-size: 13px;
     letter-spacing: 0.1rem;
     line-height: 1.5rem;
     padding-block: 4rem 5rem;
-    padding-inline: 3rem;
+    padding-inline: 1.5rem;
+    position: relative;
+  }
+  .drawer__site-discription::before {
+    display: flex;
+    content: "";
+    position: absolute;
+    width: calc(100% - 3rem);
+    top: 0.8rem;
+    border-top: 1px dotted #fff;
   }
   .tab-content.active {
     background: #434343;
   }
   #drawer__tab-tag {
-    padding-block: 1.5rem;
+    padding-block: 2rem;
   }
   .drawer__tag__category {
     font-size: 17px;
-    margin: 1.5rem;
+    margin-inline: 1.5rem;
     position: relative;
   }
-  .drawer__tag__category::before {
-    display: block;
-    position: absolute;
-    content: "";
-    bottom: -1rem;
-    width: 100%;
-    height: 0.3px;
-    background: #bbb;
-    opacity: 0.5;
+  .tag-list {
+    padding-block: 1.5rem;
   }
   .tag-list li {
-    padding-block: 1rem;
+    padding-block: 0.5rem;
   }
 }
